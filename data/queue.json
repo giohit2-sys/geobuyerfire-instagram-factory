@@ -76,7 +76,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-18T22:30:00+03:00",
-    "status": "ready",
+    "status": "published",
     "assets": [
       "published/relationships-without-decoding-v2/01.jpg",
       "published/relationships-without-decoding-v2/02.jpg",
@@ -88,7 +88,9 @@
       "published/relationships-without-decoding-v2/08.jpg",
       "published/relationships-without-decoding-v2/09.jpg",
       "published/relationships-without-decoding-v2/10.jpg"
-    ]
+    ],
+    "published_media_id": "18037120889830742",
+    "published_at": "2026-09-18T23:17:26.659019+03:00"
   },
   {
     "id": "friends-ministry-v2",
