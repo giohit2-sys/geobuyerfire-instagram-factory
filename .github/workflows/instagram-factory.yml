@@ -28,7 +28,7 @@ jobs:
       - name: Unpack initial deployment
         shell: bash
         run: |
-          if [ -f geobuyerfire-deploy.zip ]; then
+          if [ -f geobuyerfire-deploy.zip ] && [ ! -d instagram_factory ]; then
             unzip -o geobuyerfire-deploy.zip
             git config user.name "instagram-factory-bot"
             git config user.email "instagram-factory-bot@users.noreply.github.com"
