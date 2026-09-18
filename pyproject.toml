@@ -8,5 +8,8 @@ dependencies = ["Pillow>=10"]
 [project.scripts]
 ig-factory = "instagram_factory.cli:main"
 
+[tool.setuptools.packages.find]
+include = ["instagram_factory*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
