@@ -85,7 +85,7 @@
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "scheduled_at": "2026-09-18T19:30:00+03:00",
+    "scheduled_at": "2026-09-18T22:30:00+03:00",
     "status": "native_ready",
     "assets": [
       "published/relationships-without-decoding-v2/01.jpg",
@@ -139,7 +139,7 @@
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "scheduled_at": "2026-09-19T19:30:00+03:00",
+    "scheduled_at": "2026-09-20T10:00:00+03:00",
     "status": "native_ready",
     "assets": [
       "published/friends-ministry-v2/01.jpg",
@@ -193,7 +193,7 @@
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "scheduled_at": "2026-09-20T19:30:00+03:00",
+    "scheduled_at": "2026-09-20T14:00:00+03:00",
     "status": "native_ready",
     "assets": [
       "published/grown-woman-luxury-v2/01.jpg",
@@ -331,6 +331,8 @@
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-18T11:30:00+03:00",
     "status": "published",
+    "published_media_id": "18020769563868005",
+    "published_at": "2026-09-18T18:13:00+03:00",
     "assets": [
       "published/workday-boundaries-12/01.jpg",
       "published/workday-boundaries-12/02.jpg",
@@ -342,9 +344,7 @@
       "published/workday-boundaries-12/08.jpg",
       "published/workday-boundaries-12/09.jpg",
       "published/workday-boundaries-12/10.jpg"
-    ],
-    "published_media_id": "18020769563868005",
-    "published_at": "2026-09-18T18:13:25.944701+03:00"
+    ]
   },
   {
     "id": "money-without-drama-16",
@@ -365,7 +365,7 @@
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "scheduled_at": "2026-09-18T22:00:00+03:00",
+    "scheduled_at": "2026-09-19T10:00:00+03:00",
     "status": "ready",
     "assets": [
       "published/money-without-drama-16/01.jpg",
@@ -409,7 +409,7 @@
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "scheduled_at": "2026-09-19T10:00:00+03:00",
+    "scheduled_at": "2026-09-19T14:00:00+03:00",
     "status": "native_ready",
     "assets": [
       "published/vacation-in-my-head-20/01.jpg",
@@ -450,7 +450,7 @@
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "scheduled_at": "2026-09-19T10:00:00+03:00",
+    "scheduled_at": "2026-09-19T18:00:00+03:00",
     "status": "ready",
     "share_to_feed": true,
     "video_asset": "published/reels/vacation-in-my-head-v1.mp4"
