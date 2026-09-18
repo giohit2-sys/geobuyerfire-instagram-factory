@@ -330,7 +330,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-18T11:30:00+03:00",
-    "status": "ready",
+    "status": "published",
     "assets": [
       "published/workday-boundaries-12/01.jpg",
       "published/workday-boundaries-12/02.jpg",
@@ -342,7 +342,9 @@
       "published/workday-boundaries-12/08.jpg",
       "published/workday-boundaries-12/09.jpg",
       "published/workday-boundaries-12/10.jpg"
-    ]
+    ],
+    "published_media_id": "18020769563868005",
+    "published_at": "2026-09-18T18:13:25.944701+03:00"
   },
   {
     "id": "money-without-drama-16",
