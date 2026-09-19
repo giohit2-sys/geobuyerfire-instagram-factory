@@ -415,8 +415,10 @@
     "commercial_reviewed": true,
     "share_to_feed": true,
     "scheduled_at": "2026-09-19T10:00:00+03:00",
-    "status": "ready",
-    "video_asset": "published/reels/reel-one-universal-bag.mp4"
+    "status": "published",
+    "video_asset": "published/reels/reel-one-universal-bag.mp4",
+    "published_media_id": "18150712492547722",
+    "published_at": "2026-09-19T10:17:14.648206+03:00"
   },
   {
     "id": "story-coffee-only-teaser",
