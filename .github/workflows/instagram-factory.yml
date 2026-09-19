@@ -25,13 +25,19 @@ jobs:
       TIMEZONE: Europe/Moscow
     steps:
       - uses: actions/checkout@v7
-      - name: Unpack initial deployment
+      - name: Apply deployment package
         shell: bash
         run: |
-          if [ -f geobuyerfire-deploy.zip ] && [ ! -d instagram_factory ]; then
+          git config user.name "instagram-factory-bot"
+          git config user.email "instagram-factory-bot@users.noreply.github.com"
+          if [ -f geobuyerfire-content-v2.zip ]; then
+            unzip -o geobuyerfire-content-v2.zip
+            rm -f geobuyerfire-content-v2.zip
+            git add -A
+            git diff --cached --quiet || git commit -m "deploy: launch Reels and Stories factory"
+            git push
+          elif [ -f geobuyerfire-deploy.zip ] && [ ! -d instagram_factory ]; then
             unzip -o geobuyerfire-deploy.zip
-            git config user.name "instagram-factory-bot"
-            git config user.email "instagram-factory-bot@users.noreply.github.com"
             git add README.md pyproject.toml .env.example instagram_factory tests data assets published .github/workflows/instagram-factory.yml
             git diff --cached --quiet || git commit -m "chore: unpack Instagram factory"
             git push
@@ -53,7 +59,7 @@ jobs:
           git add data/queue.json published
           git diff --cached --quiet || git commit -m "chore: render Instagram queue"
           git push
-      - name: Publish at most one due carousel
+      - name: Publish at most one due item
         run: python -m instagram_factory.cli publish-due
       - name: Persist queue state
         if: always()
