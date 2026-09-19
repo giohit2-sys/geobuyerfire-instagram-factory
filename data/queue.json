@@ -112,7 +112,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-20T10:00:00+03:00",
-    "status": "ready",
+    "status": "paused_v1",
     "assets": [
       "published/friends-ministry-v2/01.jpg",
       "published/friends-ministry-v2/02.jpg",
@@ -146,7 +146,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-20T14:00:00+03:00",
-    "status": "ready",
+    "status": "paused_v1",
     "assets": [
       "published/grown-woman-luxury-v2/01.jpg",
       "published/grown-woman-luxury-v2/02.jpg",
@@ -308,7 +308,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-19T10:00:00+03:00",
-    "status": "ready",
+    "status": "paused_v1",
     "assets": [
       "published/money-without-drama-16/01.jpg",
       "published/money-without-drama-16/02.jpg",
@@ -342,7 +342,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-19T14:00:00+03:00",
-    "status": "ready",
+    "status": "paused_v1",
     "assets": [
       "published/vacation-in-my-head-20/01.jpg",
       "published/vacation-in-my-head-20/02.jpg",
@@ -373,8 +373,242 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-19T18:00:00+03:00",
-    "status": "ready",
+    "status": "paused_v1",
     "share_to_feed": true,
     "video_asset": "published/reels/vacation-in-my-head-v1.mp4"
+  },
+  {
+    "id": "story-universal-bag-teaser",
+    "media_type": "story",
+    "title": "Подводка: универсальная сумка",
+    "source_asset": "assets/editorial/seaside-cafe.png",
+    "text": "сегодня проверим, существует ли одна универсальная сумка",
+    "caption": "",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-19T09:00:00+03:00",
+    "status": "ready",
+    "story_asset": "published/stories/story-universal-bag-teaser.jpg"
+  },
+  {
+    "id": "reel-one-universal-bag",
+    "media_type": "reel",
+    "title": "Одна универсальная сумка",
+    "scenes": [
+      {
+        "source_asset": "assets/editorial/seaside-cafe.png",
+        "text": "я просто хотела одну универсальную сумку",
+        "duration": 3.2
+      },
+      {
+        "source_asset": "assets/editorial/closet-reaction.png",
+        "text": "через неделю: выбираю между «на каждый день» и «на каждый другой день»",
+        "duration": 4.0
+      }
+    ],
+    "caption": "скажите честно: универсальная сумка существует или это красивая городская легенда?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "share_to_feed": true,
+    "scheduled_at": "2026-09-19T10:00:00+03:00",
+    "status": "ready",
+    "video_asset": "published/reels/reel-one-universal-bag.mp4"
+  },
+  {
+    "id": "story-coffee-only-teaser",
+    "media_type": "story",
+    "title": "Подводка: только кофе",
+    "source_asset": "assets/editorial/city-coffee.png",
+    "text": "когда вышла только за кофе, но у дня были другие планы",
+    "caption": "",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-19T16:00:00+03:00",
+    "status": "ready",
+    "story_asset": "published/stories/story-coffee-only-teaser.jpg"
+  },
+  {
+    "id": "reel-only-for-coffee",
+    "media_type": "reel",
+    "title": "Только за кофе",
+    "scenes": [
+      {
+        "source_asset": "assets/editorial/city-coffee.png",
+        "text": "вышла только за кофе",
+        "duration": 2.8
+      },
+      {
+        "source_asset": "assets/editorial/closet-reaction.png",
+        "text": "вернулась с серьёзным решением для гардероба",
+        "duration": 3.8
+      }
+    ],
+    "caption": "иногда самые серьёзные решения принимаются по дороге за капучино.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "share_to_feed": true,
+    "scheduled_at": "2026-09-19T17:00:00+03:00",
+    "status": "ready",
+    "video_asset": "published/reels/reel-only-for-coffee.mp4"
+  },
+  {
+    "id": "story-practical-choice-teaser",
+    "media_type": "story",
+    "title": "Подводка: практичный выбор",
+    "source_asset": "assets/editorial/mirror-choice.png",
+    "text": "завтра выбираем практично. ну или очень красиво",
+    "caption": "",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-20T09:00:00+03:00",
+    "status": "ready",
+    "story_asset": "published/stories/story-practical-choice-teaser.jpg"
+  },
+  {
+    "id": "reel-practical-choice",
+    "media_type": "reel",
+    "title": "Практичный выбор",
+    "scenes": [
+      {
+        "source_asset": "assets/editorial/mirror-choice.png",
+        "text": "решила выбирать практично",
+        "duration": 2.8
+      },
+      {
+        "source_asset": "assets/editorial/closet-reaction.png",
+        "text": "практично оказалось взять две и больше не нервничать",
+        "duration": 3.8
+      }
+    ],
+    "caption": "разумный выбор — тот, после которого спокойно. у вас какой победил бы?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "share_to_feed": true,
+    "scheduled_at": "2026-09-20T10:00:00+03:00",
+    "status": "ready",
+    "video_asset": "published/reels/reel-practical-choice.mp4"
+  },
+  {
+    "id": "story-fast-decision-teaser",
+    "media_type": "story",
+    "title": "Подводка: взвешенное решение",
+    "source_asset": "assets/editorial/seaside-cafe.png",
+    "text": "после 35 решения не импульсивные. просто некоторые очень быстрые",
+    "caption": "",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-20T16:00:00+03:00",
+    "status": "ready",
+    "story_asset": "published/stories/story-fast-decision-teaser.jpg"
+  },
+  {
+    "id": "reel-fast-balanced-decision",
+    "media_type": "reel",
+    "title": "Быстрое взвешенное решение",
+    "scenes": [
+      {
+        "source_asset": "assets/editorial/seaside-cafe.png",
+        "text": "после 35 импульсивных покупок не бывает",
+        "duration": 3.0
+      },
+      {
+        "source_asset": "assets/editorial/closet-reaction.png",
+        "text": "бывают очень быстрые взвешенные решения",
+        "duration": 3.6
+      }
+    ],
+    "caption": "если решение красивое и взвешенное, зачем ему долго лежать на весах?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "share_to_feed": true,
+    "scheduled_at": "2026-09-20T17:00:00+03:00",
+    "status": "ready",
+    "video_asset": "published/reels/reel-fast-balanced-decision.mp4"
+  },
+  {
+    "id": "story-that-color-teaser",
+    "media_type": "story",
+    "title": "Подводка: тот самый оттенок",
+    "source_asset": "assets/editorial/city-coffee.png",
+    "text": "есть оттенки, после которых мнение меняется само",
+    "caption": "",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-21T09:00:00+03:00",
+    "status": "ready",
+    "story_asset": "published/stories/story-that-color-teaser.jpg"
+  },
+  {
+    "id": "reel-that-color",
+    "media_type": "reel",
+    "title": "Тот самый оттенок",
+    "scenes": [
+      {
+        "source_asset": "assets/editorial/city-coffee.png",
+        "text": "сказала, что мне всё равно на сумки",
+        "duration": 2.9
+      },
+      {
+        "source_asset": "assets/editorial/mirror-choice.png",
+        "text": "пока не увидела тот самый оттенок",
+        "duration": 3.5
+      }
+    ],
+    "caption": "у каждой есть цвет, который внезапно отменяет все прежние заявления.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "share_to_feed": true,
+    "scheduled_at": "2026-09-21T10:00:00+03:00",
+    "status": "ready",
+    "video_asset": "published/reels/reel-that-color.mp4"
+  },
+  {
+    "id": "story-financial-director-teaser",
+    "media_type": "story",
+    "title": "Подводка: финансовый директор",
+    "source_asset": "assets/editorial/mirror-choice.png",
+    "text": "мой внутренний финансовый директор снова созвал совещание",
+    "caption": "",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-21T16:00:00+03:00",
+    "status": "ready",
+    "story_asset": "published/stories/story-financial-director-teaser.jpg"
+  },
+  {
+    "id": "reel-financial-director",
+    "media_type": "reel",
+    "title": "Внутренний финансовый директор",
+    "scenes": [
+      {
+        "source_asset": "assets/editorial/mirror-choice.png",
+        "text": "мой внутренний финансовый директор сказал: «подумай»",
+        "duration": 3.1
+      },
+      {
+        "source_asset": "assets/editorial/closet-reaction.png",
+        "text": "мы подумали. настроение всё ещё за",
+        "duration": 3.6
+      }
+    ],
+    "caption": "совещание состоялось, протокол составлен, настроение учтено.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "share_to_feed": true,
+    "scheduled_at": "2026-09-21T17:00:00+03:00",
+    "status": "ready",
+    "video_asset": "published/reels/reel-financial-director.mp4"
   }
 ]

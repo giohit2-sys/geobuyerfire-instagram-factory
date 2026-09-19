@@ -67,6 +67,45 @@ class FactoryTests(unittest.TestCase):
         self.assertEqual(captured["params"]["media_type"], "REELS")
         self.assertEqual(captured["params"]["share_to_feed"], "true")
 
+    def test_valid_reel_spec(self):
+        post = {
+            "id": "reel-sample",
+            "media_type": "reel",
+            "scenes": [{"source_asset": "assets/example.png", "text": "Первый акт"}],
+            "caption": "Тест",
+            "rights_status": "original",
+            "commercial": False,
+            "commercial_reviewed": True,
+        }
+        self.assertEqual(validate_post(post), [])
+
+    def test_valid_story_spec(self):
+        post = {
+            "id": "story-sample",
+            "media_type": "story",
+            "source_asset": "assets/example.png",
+            "text": "Подводка",
+            "caption": "",
+            "rights_status": "original",
+            "commercial": False,
+            "commercial_reviewed": True,
+        }
+        self.assertEqual(validate_post(post), [])
+
+    def test_story_container_parameters(self):
+        api = InstagramAPI("token", "123")
+        captured = {}
+
+        def fake_request(method, path, params=None):
+            captured.update({"method": method, "path": path, "params": params})
+            return {"id": "story-container"}
+
+        api._request = fake_request
+        container = api.create_story_container("https://cdn.example/story.jpg")
+        self.assertEqual(container, "story-container")
+        self.assertEqual(captured["params"]["media_type"], "STORIES")
+        self.assertEqual(captured["params"]["image_url"], "https://cdn.example/story.jpg")
+
 
 if __name__ == "__main__":
     unittest.main()

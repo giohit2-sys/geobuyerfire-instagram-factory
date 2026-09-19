@@ -115,6 +115,17 @@ class InstagramAPI:
         self.wait_until_ready(container, attempts=60, delay=5.0)
         return self.publish_container(container)
 
+    def create_story_container(self, media_url: str, is_video: bool = False) -> str:
+        params = {"media_type": "STORIES"}
+        params["video_url" if is_video else "image_url"] = media_url
+        response = self._request("POST", f"{self.user_id}/media", params)
+        return str(response["id"])
+
+    def publish_story(self, media_url: str, is_video: bool = False) -> str:
+        container = self.create_story_container(media_url, is_video=is_video)
+        self.wait_until_ready(container, attempts=60 if is_video else 20, delay=5.0)
+        return self.publish_container(container)
+
     def recent_media(self, limit: int = 25) -> list[dict]:
         response = self._request("GET", f"{self.user_id}/media", {
             "fields": "id,caption,media_type,media_product_type,permalink,timestamp",

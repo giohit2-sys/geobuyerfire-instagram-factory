@@ -2,7 +2,10 @@ from __future__ import annotations
 
 from pathlib import Path
 import re
+import subprocess
+import tempfile
 
+import imageio_ffmpeg
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 
@@ -92,3 +95,97 @@ def render_carousel(post: dict, output_root: Path) -> list[Path]:
         render_slide(str(text), index, len(slides), path)
         paths.append(path)
     return paths
+
+
+def _vertical_canvas(source_asset: str) -> Image.Image:
+    source = PROJECT_ROOT / source_asset
+    if not source.exists():
+        raise FileNotFoundError(f"source asset not found: {source_asset}")
+    with Image.open(source) as image:
+        return ImageOps.fit(
+            image.convert("RGB"),
+            (1080, 1920),
+            Image.Resampling.LANCZOS,
+            centering=(0.5, 0.5),
+        )
+
+
+def _draw_vertical_text(image: Image.Image, text: str, brand: bool = True) -> Image.Image:
+    canvas = image.convert("RGBA")
+    shade = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+    shade_draw = ImageDraw.Draw(shade)
+    shade_draw.rectangle((0, 0, 1080, 650), fill=(15, 12, 12, 92))
+    shade_draw.rectangle((0, 1500, 1080, 1920), fill=(15, 12, 12, 38))
+    canvas = Image.alpha_composite(canvas, shade)
+    draw = ImageDraw.Draw(canvas)
+    face = ImageFont.truetype(str(FONT), size=64)
+    face.set_variation_by_name("Regular")
+    lines = _wrap(draw, re.sub(r"\s+", " ", text.strip()).lower(), face, 820)
+    if len(lines) > 4:
+        raise ValueError("vertical creative text exceeds four lines")
+    boxes = [draw.textbbox((0, 0), line, font=face) for line in lines]
+    heights = [box[3] - box[1] for box in boxes]
+    block_height = sum(heights) + 22 * max(0, len(lines) - 1)
+    y = max(150, (610 - block_height) // 2)
+    for line, height in zip(lines, heights):
+        width = draw.textbbox((0, 0), line, font=face)[2]
+        draw.text(((1080 - width) // 2, y), line, font=face, fill="#F7F3EE")
+        y += height + 22
+    if brand:
+        brand_face = ImageFont.truetype(str(FONT), size=30)
+        brand_face.set_variation_by_name("Regular")
+        signature = "buyer fire"
+        width = draw.textbbox((0, 0), signature, font=brand_face)[2]
+        draw.text(((1080 - width) // 2, 1790), signature, font=brand_face, fill=(247, 243, 238, 190))
+    return canvas.convert("RGB")
+
+
+def render_story(post: dict, output_root: Path) -> Path:
+    slug = re.sub(r"[^a-z0-9-]+", "-", str(post["id"]).lower()).strip("-")
+    destination = output_root / "stories" / f"{slug}.jpg"
+    image = _draw_vertical_text(_vertical_canvas(str(post["source_asset"])), str(post["text"]))
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    image.save(destination, "JPEG", quality=94, optimize=True, subsampling=0)
+    return destination
+
+
+def render_reel(post: dict, output_root: Path) -> Path:
+    slug = re.sub(r"[^a-z0-9-]+", "-", str(post["id"]).lower()).strip("-")
+    destination = output_root / "reels" / f"{slug}.mp4"
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    scenes = list(post["scenes"])
+    fps = 30
+    with tempfile.TemporaryDirectory() as temp_folder:
+        temp_root = Path(temp_folder)
+        inputs: list[str] = []
+        filters: list[str] = []
+        labels: list[str] = []
+        for index, scene in enumerate(scenes):
+            frame = _draw_vertical_text(
+                _vertical_canvas(str(scene["source_asset"])),
+                str(scene.get("text") or ""),
+            )
+            frame_path = temp_root / f"scene-{index:02d}.png"
+            frame.save(frame_path, "PNG", optimize=True)
+            duration = float(scene.get("duration") or 3.2)
+            frame_count = max(1, round(duration * fps))
+            inputs.extend(["-i", str(frame_path)])
+            out = f"v{index}"
+            fade_out = max(0.0, duration - 0.18)
+            filters.append(
+                f"[{index}:v]scale=1200:2134:force_original_aspect_ratio=increase,"
+                f"crop=1080:1920,zoompan=z='min(zoom+0.0007,1.05)':d={frame_count}:"
+                f"s=1080x1920:fps={fps},fade=t=in:st=0:d=0.18,"
+                f"fade=t=out:st={fade_out:.3f}:d=0.18,setpts=PTS-STARTPTS[{out}]"
+            )
+            labels.append(f"[{out}]")
+        filters.append(f"{''.join(labels)}concat=n={len(labels)}:v=1:a=0,format=yuv420p[v]")
+        command = [
+            imageio_ffmpeg.get_ffmpeg_exe(), "-y", *inputs,
+            "-filter_complex", ";".join(filters),
+            "-map", "[v]", "-r", str(fps), "-c:v", "libx264",
+            "-profile:v", "high", "-level", "4.1", "-crf", "20",
+            "-movflags", "+faststart", str(destination),
+        ]
+        subprocess.run(command, check=True, capture_output=True, text=True)
+    return destination

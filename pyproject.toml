@@ -3,7 +3,7 @@ name = "geobuyerfire-instagram-factory"
 version = "0.1.0"
 description = "Automated original Instagram carousel factory for Geo Buyer Fire"
 requires-python = ">=3.11"
-dependencies = ["Pillow>=10"]
+dependencies = ["Pillow>=10", "imageio-ffmpeg>=0.5"]
 
 [project.scripts]
 ig-factory = "instagram_factory.cli:main"
