@@ -544,8 +544,10 @@
     "commercial_reviewed": true,
     "share_to_feed": true,
     "scheduled_at": "2026-09-20T17:00:00+03:00",
-    "status": "ready",
-    "video_asset": "published/reels/reel-fast-balanced-decision.mp4"
+    "status": "published",
+    "video_asset": "published/reels/reel-fast-balanced-decision.mp4",
+    "published_media_id": "17968185588170055",
+    "published_at": "2026-09-20T17:17:11.958283+03:00"
   },
   {
     "id": "story-that-color-teaser",
