@@ -474,8 +474,10 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-20T09:00:00+03:00",
-    "status": "ready",
-    "story_asset": "published/stories/story-practical-choice-teaser.jpg"
+    "status": "published",
+    "story_asset": "published/stories/story-practical-choice-teaser.jpg",
+    "published_media_id": "18084180344313380",
+    "published_at": "2026-09-20T09:22:46.570726+03:00"
   },
   {
     "id": "reel-practical-choice",
