@@ -517,8 +517,10 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-20T16:00:00+03:00",
-    "status": "ready",
-    "story_asset": "published/stories/story-fast-decision-teaser.jpg"
+    "status": "published",
+    "story_asset": "published/stories/story-fast-decision-teaser.jpg",
+    "published_media_id": "18107240816235433",
+    "published_at": "2026-09-20T16:17:07.296257+03:00"
   },
   {
     "id": "reel-fast-balanced-decision",
