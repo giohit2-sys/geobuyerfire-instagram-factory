@@ -31,7 +31,7 @@ jobs:
         run: |
           shopt -s nullglob
           parts=(hf72-deploy.zip.part-*)
-          if [ ${#parts[@]} -gt 0 ]; then
+          if [ -f hf72-deploy.zip.part-07 ] && [ ${#parts[@]} -eq 8 ]; then
             cat "${parts[@]}" > /tmp/hf72-deploy.zip
             unzip -o /tmp/hf72-deploy.zip
             git config user.name "instagram-factory-bot"
