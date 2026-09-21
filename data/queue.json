@@ -603,8 +603,10 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-21T16:00:00+03:00",
-    "status": "ready",
-    "story_asset": "published/stories/story-financial-director-teaser.jpg"
+    "status": "published",
+    "story_asset": "published/stories/story-financial-director-teaser.jpg",
+    "published_media_id": "18018130493936326",
+    "published_at": "2026-09-21T16:17:38.310984+03:00"
   },
   {
     "id": "reel-financial-director",
