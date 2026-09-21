@@ -587,8 +587,10 @@
     "commercial_reviewed": true,
     "share_to_feed": true,
     "scheduled_at": "2026-09-21T10:00:00+03:00",
-    "status": "ready",
-    "video_asset": "published/reels/reel-that-color.mp4"
+    "status": "published",
+    "video_asset": "published/reels/reel-that-color.mp4",
+    "published_media_id": "18098350952064335",
+    "published_at": "2026-09-21T10:20:02.954494+03:00"
   },
   {
     "id": "story-financial-director-teaser",
