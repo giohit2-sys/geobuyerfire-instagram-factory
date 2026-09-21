@@ -76,7 +76,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-18T22:30:00+03:00",
-    "status": "published",
+    "status": "archived",
     "assets": [
       "published/relationships-without-decoding-v2/01.jpg",
       "published/relationships-without-decoding-v2/02.jpg",
@@ -89,8 +89,7 @@
       "published/relationships-without-decoding-v2/09.jpg",
       "published/relationships-without-decoding-v2/10.jpg"
     ],
-    "published_media_id": "18037120889830742",
-    "published_at": "2026-09-18T23:17:26.659019+03:00"
+    "archive_reason": "replaced_by_72h_variant_1_test"
   },
   {
     "id": "friends-ministry-v2",
@@ -112,7 +111,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-20T10:00:00+03:00",
-    "status": "paused_v1",
+    "status": "archived",
     "assets": [
       "published/friends-ministry-v2/01.jpg",
       "published/friends-ministry-v2/02.jpg",
@@ -124,7 +123,8 @@
       "published/friends-ministry-v2/08.jpg",
       "published/friends-ministry-v2/09.jpg",
       "published/friends-ministry-v2/10.jpg"
-    ]
+    ],
+    "archive_reason": "replaced_by_72h_variant_1_test"
   },
   {
     "id": "grown-woman-luxury-v2",
@@ -146,7 +146,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-20T14:00:00+03:00",
-    "status": "paused_v1",
+    "status": "archived",
     "assets": [
       "published/grown-woman-luxury-v2/01.jpg",
       "published/grown-woman-luxury-v2/02.jpg",
@@ -158,7 +158,8 @@
       "published/grown-woman-luxury-v2/08.jpg",
       "published/grown-woman-luxury-v2/09.jpg",
       "published/grown-woman-luxury-v2/10.jpg"
-    ]
+    ],
+    "archive_reason": "replaced_by_72h_variant_1_test"
   },
   {
     "id": "relationships-clear-signals-16",
@@ -308,7 +309,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-19T10:00:00+03:00",
-    "status": "paused_v1",
+    "status": "archived",
     "assets": [
       "published/money-without-drama-16/01.jpg",
       "published/money-without-drama-16/02.jpg",
@@ -320,7 +321,8 @@
       "published/money-without-drama-16/08.jpg",
       "published/money-without-drama-16/09.jpg",
       "published/money-without-drama-16/10.jpg"
-    ]
+    ],
+    "archive_reason": "replaced_by_72h_variant_1_test"
   },
   {
     "id": "vacation-in-my-head-20",
@@ -342,7 +344,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-19T14:00:00+03:00",
-    "status": "paused_v1",
+    "status": "archived",
     "assets": [
       "published/vacation-in-my-head-20/01.jpg",
       "published/vacation-in-my-head-20/02.jpg",
@@ -354,7 +356,8 @@
       "published/vacation-in-my-head-20/08.jpg",
       "published/vacation-in-my-head-20/09.jpg",
       "published/vacation-in-my-head-20/10.jpg"
-    ]
+    ],
+    "archive_reason": "replaced_by_72h_variant_1_test"
   },
   {
     "id": "vacation-in-my-head-reel-v1",
@@ -373,266 +376,1449 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-19T18:00:00+03:00",
-    "status": "paused_v1",
+    "status": "archived",
     "share_to_feed": true,
-    "video_asset": "published/reels/vacation-in-my-head-v1.mp4"
+    "video_asset": "published/reels/vacation-in-my-head-v1.mp4",
+    "archive_reason": "replaced_by_72h_variant_1_test"
   },
   {
-    "id": "story-universal-bag-teaser",
-    "media_type": "story",
-    "title": "Подводка: универсальная сумка",
-    "source_asset": "assets/editorial/seaside-cafe.png",
-    "text": "сегодня проверим, существует ли одна универсальная сумка",
-    "caption": "",
-    "rights_status": "original",
-    "commercial": false,
-    "commercial_reviewed": true,
-    "scheduled_at": "2026-09-19T09:00:00+03:00",
-    "status": "published",
-    "story_asset": "published/stories/story-universal-bag-teaser.jpg",
-    "published_media_id": "18115450276799217",
-    "published_at": "2026-09-19T09:22:46.429684+03:00"
-  },
-  {
-    "id": "reel-one-universal-bag",
-    "media_type": "reel",
-    "title": "Одна универсальная сумка",
-    "scenes": [
-      {
-        "source_asset": "assets/editorial/seaside-cafe.png",
-        "text": "я просто хотела одну универсальную сумку",
-        "duration": 3.2
-      },
-      {
-        "source_asset": "assets/editorial/closet-reaction.png",
-        "text": "через неделю: выбираю между «на каждый день» и «на каждый другой день»",
-        "duration": 4.0
-      }
+    "id": "hf72-20260921-20-01",
+    "title": "если он хотел бы — вы бы уже знали",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "если он хотел бы — вы бы уже знали",
+      "взрослая взаимность не нуждается в переводчике, совете подруг и трёх неделях ожидания"
     ],
-    "caption": "скажите честно: универсальная сумка существует или это красивая городская легенда?",
+    "caption": "какая мысль попала точно?",
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "share_to_feed": true,
-    "scheduled_at": "2026-09-19T10:00:00+03:00",
-    "status": "published",
-    "video_asset": "published/reels/reel-one-universal-bag.mp4",
-    "published_media_id": "18150712492547722",
-    "published_at": "2026-09-19T10:17:14.648206+03:00"
+    "scheduled_at": "2026-09-21T20:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260921-20-01/01.jpg",
+      "published/hf72-20260921-20-01/02.jpg"
+    ]
   },
   {
-    "id": "story-coffee-only-teaser",
-    "media_type": "story",
-    "title": "Подводка: только кофе",
-    "source_asset": "assets/editorial/city-coffee.png",
-    "text": "когда вышла только за кофе, но у дня были другие планы",
-    "caption": "",
-    "rights_status": "original",
-    "commercial": false,
-    "commercial_reviewed": true,
-    "scheduled_at": "2026-09-19T16:00:00+03:00",
-    "status": "published",
-    "story_asset": "published/stories/story-coffee-only-teaser.jpg",
-    "published_media_id": "18077815445526298",
-    "published_at": "2026-09-19T16:18:13.148553+03:00"
-  },
-  {
-    "id": "reel-only-for-coffee",
-    "media_type": "reel",
-    "title": "Только за кофе",
-    "scenes": [
-      {
-        "source_asset": "assets/editorial/city-coffee.png",
-        "text": "вышла только за кофе",
-        "duration": 2.8
-      },
-      {
-        "source_asset": "assets/editorial/closet-reaction.png",
-        "text": "вернулась с серьёзным решением для гардероба",
-        "duration": 3.8
-      }
+    "id": "hf72-20260921-21-02",
+    "title": "самый красный флаг — ваше постоянное оправдание его поведения",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "самый красный флаг — ваше постоянное оправдание его поведения",
+      "когда всё хорошо, не приходится каждый вечер защищать отношения в собственной голове"
     ],
-    "caption": "иногда самые серьёзные решения принимаются по дороге за капучино.",
+    "caption": "узнали себя — или кого-то рядом?",
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "share_to_feed": true,
-    "scheduled_at": "2026-09-19T17:00:00+03:00",
-    "status": "published",
-    "video_asset": "published/reels/reel-only-for-coffee.mp4",
-    "published_media_id": "18178895515382329",
-    "published_at": "2026-09-19T17:17:32.295109+03:00"
+    "scheduled_at": "2026-09-21T21:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260921-21-02/01.jpg",
+      "published/hf72-20260921-21-02/02.jpg"
+    ]
   },
   {
-    "id": "story-practical-choice-teaser",
-    "media_type": "story",
-    "title": "Подводка: практичный выбор",
-    "source_asset": "assets/editorial/mirror-choice.png",
-    "text": "завтра выбираем практично. ну или очень красиво",
-    "caption": "",
-    "rights_status": "original",
-    "commercial": false,
-    "commercial_reviewed": true,
-    "scheduled_at": "2026-09-20T09:00:00+03:00",
-    "status": "published",
-    "story_asset": "published/stories/story-practical-choice-teaser.jpg",
-    "published_media_id": "18084180344313380",
-    "published_at": "2026-09-20T09:22:46.570726+03:00"
-  },
-  {
-    "id": "reel-practical-choice",
-    "media_type": "reel",
-    "title": "Практичный выбор",
-    "scenes": [
-      {
-        "source_asset": "assets/editorial/mirror-choice.png",
-        "text": "решила выбирать практично",
-        "duration": 2.8
-      },
-      {
-        "source_asset": "assets/editorial/closet-reaction.png",
-        "text": "практично оказалось взять две и больше не нервничать",
-        "duration": 3.8
-      }
+    "id": "hf72-20260921-22-03",
+    "title": "он не запутался. ему просто удобно, что запутались вы",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "он не запутался. ему просто удобно, что запутались вы",
+      "неопределённость тоже бывает ответом — просто без мужества произнести его вслух"
     ],
-    "caption": "разумный выбор — тот, после которого спокойно. у вас какой победил бы?",
+    "caption": "иногда одна фраза объясняет целую историю.",
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "share_to_feed": true,
-    "scheduled_at": "2026-09-20T10:00:00+03:00",
-    "status": "published",
-    "video_asset": "published/reels/reel-practical-choice.mp4",
-    "published_media_id": "18105665867086702",
-    "published_at": "2026-09-20T10:17:17.534110+03:00"
+    "scheduled_at": "2026-09-21T22:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260921-22-03/01.jpg",
+      "published/hf72-20260921-22-03/02.jpg"
+    ]
   },
   {
-    "id": "story-fast-decision-teaser",
-    "media_type": "story",
-    "title": "Подводка: взвешенное решение",
-    "source_asset": "assets/editorial/seaside-cafe.png",
-    "text": "после 35 решения не импульсивные. просто некоторые очень быстрые",
-    "caption": "",
-    "rights_status": "original",
-    "commercial": false,
-    "commercial_reviewed": true,
-    "scheduled_at": "2026-09-20T16:00:00+03:00",
-    "status": "published",
-    "story_asset": "published/stories/story-fast-decision-teaser.jpg",
-    "published_media_id": "18107240816235433",
-    "published_at": "2026-09-20T16:17:07.296257+03:00"
-  },
-  {
-    "id": "reel-fast-balanced-decision",
-    "media_type": "reel",
-    "title": "Быстрое взвешенное решение",
-    "scenes": [
-      {
-        "source_asset": "assets/editorial/seaside-cafe.png",
-        "text": "после 35 импульсивных покупок не бывает",
-        "duration": 3.0
-      },
-      {
-        "source_asset": "assets/editorial/closet-reaction.png",
-        "text": "бывают очень быстрые взвешенные решения",
-        "duration": 3.6
-      }
+    "id": "hf72-20260921-23-04",
+    "title": "любовь не должна ощущаться как собеседование без результата",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "любовь не должна ощущаться как собеседование без результата",
+      "если вас всё время оценивают, возможно, пора самой закрыть эту вакансию"
     ],
-    "caption": "если решение красивое и взвешенное, зачем ему долго лежать на весах?",
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "share_to_feed": true,
-    "scheduled_at": "2026-09-20T17:00:00+03:00",
-    "status": "published",
-    "video_asset": "published/reels/reel-fast-balanced-decision.mp4",
-    "published_media_id": "17968185588170055",
-    "published_at": "2026-09-20T17:17:11.958283+03:00"
+    "scheduled_at": "2026-09-21T23:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260921-23-04/01.jpg",
+      "published/hf72-20260921-23-04/02.jpg"
+    ]
   },
   {
-    "id": "story-that-color-teaser",
-    "media_type": "story",
-    "title": "Подводка: тот самый оттенок",
-    "source_asset": "assets/editorial/city-coffee.png",
-    "text": "есть оттенки, после которых мнение меняется само",
-    "caption": "",
-    "rights_status": "original",
-    "commercial": false,
-    "commercial_reviewed": true,
-    "scheduled_at": "2026-09-21T09:00:00+03:00",
-    "status": "published",
-    "story_asset": "published/stories/story-that-color-teaser.jpg",
-    "published_media_id": "17989770186063687",
-    "published_at": "2026-09-21T09:25:47.882106+03:00"
-  },
-  {
-    "id": "reel-that-color",
-    "media_type": "reel",
-    "title": "Тот самый оттенок",
-    "scenes": [
-      {
-        "source_asset": "assets/editorial/city-coffee.png",
-        "text": "сказала, что мне всё равно на сумки",
-        "duration": 2.9
-      },
-      {
-        "source_asset": "assets/editorial/mirror-choice.png",
-        "text": "пока не увидела тот самый оттенок",
-        "duration": 3.5
-      }
+    "id": "hf72-20260922-00-05",
+    "title": "после 35 химия без ясности уже не впечатляет",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "после 35 химия без ясности уже не впечатляет",
+      "искры красивы, но взрослой женщине нужен человек, рядом с которым ничего не горит"
     ],
-    "caption": "у каждой есть цвет, который внезапно отменяет все прежние заявления.",
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "share_to_feed": true,
-    "scheduled_at": "2026-09-21T10:00:00+03:00",
-    "status": "published",
-    "video_asset": "published/reels/reel-that-color.mp4",
-    "published_media_id": "18098350952064335",
-    "published_at": "2026-09-21T10:20:02.954494+03:00"
+    "scheduled_at": "2026-09-22T00:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-00-05/01.jpg",
+      "published/hf72-20260922-00-05/02.jpg"
+    ]
   },
   {
-    "id": "story-financial-director-teaser",
-    "media_type": "story",
-    "title": "Подводка: финансовый директор",
-    "source_asset": "assets/editorial/mirror-choice.png",
-    "text": "мой внутренний финансовый директор снова созвал совещание",
-    "caption": "",
-    "rights_status": "original",
-    "commercial": false,
-    "commercial_reviewed": true,
-    "scheduled_at": "2026-09-21T16:00:00+03:00",
-    "status": "published",
-    "story_asset": "published/stories/story-financial-director-teaser.jpg",
-    "published_media_id": "18018130493936326",
-    "published_at": "2026-09-21T16:17:38.310984+03:00"
-  },
-  {
-    "id": "reel-financial-director",
-    "media_type": "reel",
-    "title": "Внутренний финансовый директор",
-    "scenes": [
-      {
-        "source_asset": "assets/editorial/mirror-choice.png",
-        "text": "мой внутренний финансовый директор сказал: «подумай»",
-        "duration": 3.1
-      },
-      {
-        "source_asset": "assets/editorial/closet-reaction.png",
-        "text": "мы подумали. настроение всё ещё за",
-        "duration": 3.6
-      }
+    "id": "hf72-20260922-01-06",
+    "title": "иногда скучаешь не по человеку, а по своей надежде на него",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "иногда скучаешь не по человеку, а по своей надежде на него",
+      "и это хорошая новость: надежду можно забрать с собой, а человека оставить в прошлом"
     ],
-    "caption": "совещание состоялось, протокол составлен, настроение учтено.",
+    "caption": "взрослая жизнь иногда звучит именно так.",
     "rights_status": "original",
     "commercial": false,
     "commercial_reviewed": true,
-    "share_to_feed": true,
-    "scheduled_at": "2026-09-21T17:00:00+03:00",
-    "status": "published",
-    "video_asset": "published/reels/reel-financial-director.mp4",
-    "published_media_id": "18023728415878931",
-    "published_at": "2026-09-21T17:18:26.163235+03:00"
+    "scheduled_at": "2026-09-22T01:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-01-06/01.jpg",
+      "published/hf72-20260922-01-06/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-02-07",
+    "title": "молчание после ссоры — не пауза, если вас так наказывают",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "молчание после ссоры — не пауза, если вас так наказывают",
+      "близость строят разговором, а не исчезновением до тех пор, пока вы не сдадитесь"
+    ],
+    "caption": "какая мысль попала точно?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T02:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-02-07/01.jpg",
+      "published/hf72-20260922-02-07/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-03-08",
+    "title": "не каждый, кто вернулся, понял вашу ценность",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "не каждый, кто вернулся, понял вашу ценность",
+      "иногда человек просто проверяет, открыта ли ещё дверь, которой он привык пользоваться"
+    ],
+    "caption": "узнали себя — или кого-то рядом?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T03:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-03-08/01.jpg",
+      "published/hf72-20260922-03-08/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-04-09",
+    "title": "здоровая любовь не делает вас частным детективом",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "здоровая любовь не делает вас частным детективом",
+      "рядом с подходящим человеком вы живёте, а не собираете улики из лайков и времени в сети"
+    ],
+    "caption": "иногда одна фраза объясняет целую историю.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T04:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-04-09/01.jpg",
+      "published/hf72-20260922-04-09/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-05-10",
+    "title": "бабочки — не всегда любовь. иногда это тревога",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "бабочки — не всегда любовь. иногда это тревога",
+      "спокойствие может казаться непривычным, если раньше страсть всегда шла вместе с качелями"
+    ],
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T05:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-05-10/01.jpg",
+      "published/hf72-20260922-05-10/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-06-11",
+    "title": "его потенциал не обязан становиться вашим проектом",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "его потенциал не обязан становиться вашим проектом",
+      "влюбляться лучше в поступки настоящего, а не в презентацию возможного будущего"
+    ],
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T06:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-06-11/01.jpg",
+      "published/hf72-20260922-06-11/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-07-12",
+    "title": "самое взрослое свидание начинается с конкретики",
+    "topic": "отношения",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "самое взрослое свидание начинается с конкретики",
+      "дата, место и уважение к вашему времени звучат романтичнее загадочного «как-нибудь увидимся»"
+    ],
+    "caption": "взрослая жизнь иногда звучит именно так.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T07:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-07-12/01.jpg",
+      "published/hf72-20260922-07-12/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-08-13",
+    "title": "вы не обязаны быть удобной, чтобы быть любимой",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "вы не обязаны быть удобной, чтобы быть любимой",
+      "люди, которым нужна только ваша уступчивость, скучают не по вам — по отсутствию сопротивления"
+    ],
+    "caption": "какая мысль попала точно?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T08:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-08-13/01.jpg",
+      "published/hf72-20260922-08-13/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-09-14",
+    "title": "«нет» — это предложение, которое не требует второй части",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "«нет» — это предложение, которое не требует второй части",
+      "объяснение можно дать из близости, но не из страха показаться плохой"
+    ],
+    "caption": "узнали себя — или кого-то рядом?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T09:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-09-14/01.jpg",
+      "published/hf72-20260922-09-14/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-10-15",
+    "title": "чужое разочарование не всегда означает вашу ошибку",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "чужое разочарование не всегда означает вашу ошибку",
+      "иногда человек просто впервые встретил границу там, где раньше была бесплатная услуга"
+    ],
+    "caption": "иногда одна фраза объясняет целую историю.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T10:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-10-15/01.jpg",
+      "published/hf72-20260922-10-15/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-11-16",
+    "title": "перестать спасать всех — не эгоизм",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "перестать спасать всех — не эгоизм",
+      "это момент, когда вы наконец заметили, что у вашего ресурса тоже есть хозяйка"
+    ],
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T11:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-11-16/01.jpg",
+      "published/hf72-20260922-11-16/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-12-17",
+    "title": "если после общения нужно восстанавливаться — это данные",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "если после общения нужно восстанавливаться — это данные",
+      "не все отношения надо чинить. некоторые достаточно честно перестать обслуживать"
+    ],
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T12:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-12-17/01.jpg",
+      "published/hf72-20260922-12-17/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-13-18",
+    "title": "вашу доброту могли принять за безлимит",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "вашу доброту могли принять за безлимит",
+      "пора напомнить: забота — подарок, а не автоматическая подписка без права отмены"
+    ],
+    "caption": "взрослая жизнь иногда звучит именно так.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T13:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-13-18/01.jpg",
+      "published/hf72-20260922-13-18/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-14-19",
+    "title": "молчать ради мира — слишком дорогой мир",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "молчать ради мира — слишком дорогой мир",
+      "если тишина оплачена вашим самоуважением, это уже не гармония, а аренда спокойствия"
+    ],
+    "caption": "какая мысль попала точно?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T14:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-14-19/01.jpg",
+      "published/hf72-20260922-14-19/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-15-20",
+    "title": "можно любить человека и не пускать его обратно",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "можно любить человека и не пускать его обратно",
+      "чувства не аннулируют память, выводы и право выбирать безопасную дистанцию"
+    ],
+    "caption": "узнали себя — или кого-то рядом?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T15:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-15-20/01.jpg",
+      "published/hf72-20260922-15-20/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-16-21",
+    "title": "ваше время — не свободное окно для чужих просьб",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "ваше время — не свободное окно для чужих просьб",
+      "если вы ничем не заняты, это ещё не значит, что вы автоматически доступны"
+    ],
+    "caption": "иногда одна фраза объясняет целую историю.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T16:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-16-21/01.jpg",
+      "published/hf72-20260922-16-21/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-17-22",
+    "title": "не всё нужно прощать ради собственного спокойствия",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "не всё нужно прощать ради собственного спокойствия",
+      "иногда спокойствие приходит не после прощения, а после прекращения доступа"
+    ],
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T17:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-17-22/01.jpg",
+      "published/hf72-20260922-17-22/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-18-23",
+    "title": "трудный характер — не лицензия ранить близких",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "трудный характер — не лицензия ранить близких",
+      "взрослый человек может иметь прошлое и всё равно отвечать за то, как обращается с вами"
+    ],
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T18:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-18-23/01.jpg",
+      "published/hf72-20260922-18-23/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-19-24",
+    "title": "границы особенно не нравятся тем, кому нравилось их отсутствие",
+    "topic": "границы",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "границы особенно не нравятся тем, кому нравилось их отсутствие",
+      "их недовольство не доказывает, что вы стали хуже. оно показывает, что правила изменились"
+    ],
+    "caption": "взрослая жизнь иногда звучит именно так.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T19:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-19-24/01.jpg",
+      "published/hf72-20260922-19-24/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-20-25",
+    "title": "финансовая зрелость — это не перестать хотеть красивое",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "финансовая зрелость — это не перестать хотеть красивое",
+      "это научиться отличать своё желание от попытки срочно доказать кому-то, что у вас всё хорошо"
+    ],
+    "caption": "какая мысль попала точно?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T20:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-20-25/01.jpg",
+      "published/hf72-20260922-20-25/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-21-26",
+    "title": "дорого — это ещё не всегда роскошно",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "дорого — это ещё не всегда роскошно",
+      "настоящая роскошь часто выглядит как запас денег, свободное утро и отсутствие чужих долгов"
+    ],
+    "caption": "узнали себя — или кого-то рядом?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T21:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-21-26/01.jpg",
+      "published/hf72-20260922-21-26/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-22-27",
+    "title": "не каждая экономия бережёт деньги",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "не каждая экономия бережёт деньги",
+      "иногда дешёвая вещь забирает больше: время, раздражение и ещё одну покупку через месяц"
+    ],
+    "caption": "иногда одна фраза объясняет целую историю.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T22:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-22-27/01.jpg",
+      "published/hf72-20260922-22-27/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260922-23-28",
+    "title": "стыд за разговор о деньгах обходится слишком дорого",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "стыд за разговор о деньгах обходится слишком дорого",
+      "зарплата, долги и бюджет становятся легче, когда перестают быть семейной тайной"
+    ],
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-22T23:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260922-23-28/01.jpg",
+      "published/hf72-20260922-23-28/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-00-29",
+    "title": "покупка для настроения работает до банковского уведомления",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "покупка для настроения работает до банковского уведомления",
+      "поэтому взрослая забота о себе иногда начинается не с корзины, а с честного вопроса «что мне сейчас нужно?»"
+    ],
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T00:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-00-29/01.jpg",
+      "published/hf72-20260923-00-29/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-01-30",
+    "title": "богатый вид и финансовая свобода — разные проекты",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "богатый вид и финансовая свобода — разные проекты",
+      "первый нужен зрителям, вторая — вам. и только один из них помогает спокойно спать"
+    ],
+    "caption": "взрослая жизнь иногда звучит именно так.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T01:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-01-30/01.jpg",
+      "published/hf72-20260923-01-30/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-02-31",
+    "title": "деньги любят не тишину, а ясность",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "деньги любят не тишину, а ясность",
+      "цифры перестают пугать, когда у каждой суммы появляется имя: жизнь, запас, радость, цель"
+    ],
+    "caption": "какая мысль попала точно?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T02:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-02-31/01.jpg",
+      "published/hf72-20260923-02-31/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-03-32",
+    "title": "необязательно заслуживать отдых полным истощением",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "необязательно заслуживать отдых полным истощением",
+      "деньги на паузу — такая же взрослая статья бюджета, как счета и продукты"
+    ],
+    "caption": "узнали себя — или кого-то рядом?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T03:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-03-32/01.jpg",
+      "published/hf72-20260923-03-32/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-04-33",
+    "title": "самая дорогая привычка — жить напоказ",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "самая дорогая привычка — жить напоказ",
+      "публика видит один вечер, а ваш бюджет потом ещё месяц смотрит режиссёрскую версию"
+    ],
+    "caption": "иногда одна фраза объясняет целую историю.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T04:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-04-33/01.jpg",
+      "published/hf72-20260923-04-33/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-05-34",
+    "title": "финансовая подушка не обязана быть большой сразу",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "финансовая подушка не обязана быть большой сразу",
+      "она начинается с суммы, которая однажды позволит сказать «нет» без паники"
+    ],
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T05:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-05-34/01.jpg",
+      "published/hf72-20260923-05-34/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-06-35",
+    "title": "чужой уровень жизни — плохой личный бюджет",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "чужой уровень жизни — плохой личный бюджет",
+      "вы видите их покупки, но не видите доход, долги, помощь семьи и цену этого фасада"
+    ],
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T06:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-06-35/01.jpg",
+      "published/hf72-20260923-06-35/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-07-36",
+    "title": "иногда лучшая покупка месяца — то, что вы не купили",
+    "topic": "деньги",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "иногда лучшая покупка месяца — то, что вы не купили",
+      "не из запрета, а потому что вовремя поняли: вещь обещала чувство, которого в коробке не будет"
+    ],
+    "caption": "взрослая жизнь иногда звучит именно так.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T07:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-07-36/01.jpg",
+      "published/hf72-20260923-07-36/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-08-37",
+    "title": "взрослая дружба выдерживает неделю без сообщений",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "взрослая дружба выдерживает неделю без сообщений",
+      "но не выдерживает годы, в которых вспоминают о вас только между просьбой и очередной драмой"
+    ],
+    "caption": "какая мысль попала точно?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T08:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-08-37/01.jpg",
+      "published/hf72-20260923-08-37/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-09-38",
+    "title": "подруга не обязана соглашаться, чтобы быть на вашей стороне",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "подруга не обязана соглашаться, чтобы быть на вашей стороне",
+      "иногда самая бережная поддержка звучит как правда, которую никто другой не решился сказать"
+    ],
+    "caption": "узнали себя — или кого-то рядом?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T09:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-09-38/01.jpg",
+      "published/hf72-20260923-09-38/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-10-39",
+    "title": "не всякая долгая дружба должна длиться дальше",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "не всякая долгая дружба должна длиться дальше",
+      "общая история объясняет близость, но не обязывает бесконечно терпеть настоящее"
+    ],
+    "caption": "иногда одна фраза объясняет целую историю.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T10:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-10-39/01.jpg",
+      "published/hf72-20260923-10-39/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-11-40",
+    "title": "есть подруги, после которых снова нравишься себе",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "есть подруги, после которых снова нравишься себе",
+      "вот это и есть редкая совместимость: рядом с человеком не приходится уменьшаться"
+    ],
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T11:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-11-40/01.jpg",
+      "published/hf72-20260923-11-40/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-12-41",
+    "title": "в дружбе тоже бывает односторонняя подписка",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "в дружбе тоже бывает односторонняя подписка",
+      "вы знаете все её новости, а она о вашей жизни — только то, что успела спросить перед своей историей"
+    ],
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T12:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-12-41/01.jpg",
+      "published/hf72-20260923-12-41/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-13-42",
+    "title": "настоящая близость не ведёт бухгалтерию помощи",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "настоящая близость не ведёт бухгалтерию помощи",
+      "но замечает, когда один годами вкладывает сердце, а второй приходит только с квитанциями"
+    ],
+    "caption": "взрослая жизнь иногда звучит именно так.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T13:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-13-42/01.jpg",
+      "published/hf72-20260923-13-42/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-14-43",
+    "title": "иногда подруга завидует не вашей жизни, а вашей смелости",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "иногда подруга завидует не вашей жизни, а вашей смелости",
+      "это можно понять. но превращать понимание в разрешение обесценивать себя не нужно"
+    ],
+    "caption": "какая мысль попала точно?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T14:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-14-43/01.jpg",
+      "published/hf72-20260923-14-43/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-15-44",
+    "title": "дружба после 35 планируется за три недели",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "дружба после 35 планируется за три недели",
+      "а потом отменяется за час — с такой любовью и облегчением, что обижаться невозможно"
+    ],
+    "caption": "узнали себя — или кого-то рядом?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T15:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-15-44/01.jpg",
+      "published/hf72-20260923-15-44/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-16-45",
+    "title": "лучшие подруги помнят ваши старые версии",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "лучшие подруги помнят ваши старые версии",
+      "и всё равно не используют прошлое, чтобы удержать вас в месте, которое вы давно переросли"
+    ],
+    "caption": "иногда одна фраза объясняет целую историю.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T16:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-16-45/01.jpg",
+      "published/hf72-20260923-16-45/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-17-46",
+    "title": "поддержка — это не всегда совет",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "поддержка — это не всегда совет",
+      "иногда человеку нужен не план спасения, а место, где он может закончить предложение"
+    ],
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T17:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-17-46/01.jpg",
+      "published/hf72-20260923-17-46/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-18-47",
+    "title": "если дружба держится только на ваших инициативах — отпустите руль",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "если дружба держится только на ваших инициативах — отпустите руль",
+      "тишина покажет, было ли это движение вдвоём или вы всё время толкали машину одна"
+    ],
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T18:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-18-47/01.jpg",
+      "published/hf72-20260923-18-47/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-19-48",
+    "title": "с возрастом круг общения меньше, зато воздух чище",
+    "topic": "дружба",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "с возрастом круг общения меньше, зато воздух чище",
+      "остаётся не толпа, а несколько людей, рядом с которыми не нужно репетировать себя"
+    ],
+    "caption": "взрослая жизнь иногда звучит именно так.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T19:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-19-48/01.jpg",
+      "published/hf72-20260923-19-48/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-20-49",
+    "title": "выходной, после которого нужен выходной — это мероприятие",
+    "topic": "взрослая жизнь",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "выходной, после которого нужен выходной — это мероприятие",
+      "настоящий отдых иногда выглядит подозрительно просто: тишина, еда и отсутствие планов"
+    ],
+    "caption": "какая мысль попала точно?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T20:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-20-49/01.jpg",
+      "published/hf72-20260923-20-49/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-21-50",
+    "title": "после 35 спонтанность требует предварительной записи",
+    "topic": "взрослая жизнь",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "после 35 спонтанность требует предварительной записи",
+      "нам всё ещё нравятся приключения — просто желательно знать адрес, парковку и время возвращения"
+    ],
+    "caption": "узнали себя — или кого-то рядом?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T21:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-21-50/01.jpg",
+      "published/hf72-20260923-21-50/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-22-51",
+    "title": "усталость не всегда лечится отпуском",
+    "topic": "отдых",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "усталость не всегда лечится отпуском",
+      "если жизнь построена против вас, море даст передышку, но не изменит маршрут"
+    ],
+    "caption": "иногда одна фраза объясняет целую историю.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T22:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-22-51/01.jpg",
+      "published/hf72-20260923-22-51/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260923-23-52",
+    "title": "домой пораньше — это не проигрыш вечеринке",
+    "topic": "взрослая жизнь",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "домой пораньше — это не проигрыш вечеринке",
+      "это победа женщины, которая уже знает цену завтрашнему утру"
+    ],
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-23T23:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260923-23-52/01.jpg",
+      "published/hf72-20260923-23-52/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-00-53",
+    "title": "иногда продуктивность — вовремя остановиться",
+    "topic": "отдых",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "иногда продуктивность — вовремя остановиться",
+      "не каждый свободный час обязан превращаться в проект по улучшению себя"
+    ],
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T00:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-00-53/01.jpg",
+      "published/hf72-20260924-00-53/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-01-54",
+    "title": "взрослость — купить торт без повода и есть его спокойно",
+    "topic": "взрослая жизнь",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "взрослость — купить торт без повода и есть его спокойно",
+      "никто не придёт проверять, достаточно ли важное событие случилось в вашей жизни"
+    ],
+    "caption": "взрослая жизнь иногда звучит именно так.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T01:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-01-54/01.jpg",
+      "published/hf72-20260924-01-54/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-02-55",
+    "title": "отдых, за который вы себя ругаете, не засчитывается",
+    "topic": "отдых",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "отдых, за который вы себя ругаете, не засчитывается",
+      "тело лежит на диване, а внутренний начальник всё ещё проводит планёрку"
+    ],
+    "caption": "какая мысль попала точно?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T02:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-02-55/01.jpg",
+      "published/hf72-20260924-02-55/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-03-56",
+    "title": "не хочется никуда идти — иногда это и есть план",
+    "topic": "отдых",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "не хочется никуда идти — иногда это и есть план",
+      "вам не нужно придумывать уважительную причину, чтобы выбрать вечер с собой"
+    ],
+    "caption": "узнали себя — или кого-то рядом?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T03:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-03-56/01.jpg",
+      "published/hf72-20260924-03-56/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-04-57",
+    "title": "порядок дома не равен порядку в жизни",
+    "topic": "взрослая жизнь",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "порядок дома не равен порядку в жизни",
+      "можно разобрать шкаф и всё равно не найти там ответ, почему вы так устали"
+    ],
+    "caption": "иногда одна фраза объясняет целую историю.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T04:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-04-57/01.jpg",
+      "published/hf72-20260924-04-57/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-05-58",
+    "title": "самая недооценённая роскошь — медленное утро",
+    "topic": "отдых",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "самая недооценённая роскошь — медленное утро",
+      "без будильника, чужих срочностей и необходимости сразу становиться полезной"
+    ],
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T05:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-05-58/01.jpg",
+      "published/hf72-20260924-05-58/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-06-59",
+    "title": "возраст — это когда радуешься отмене планов дважды",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "возраст — это когда радуешься отмене планов дважды",
+      "сначала потому что не надо идти, потом потому что вечер внезапно снова принадлежит тебе"
+    ],
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T06:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-06-59/01.jpg",
+      "published/hf72-20260924-06-59/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-07-60",
+    "title": "взрослая жизнь держится на списках, кофе и переносах",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "взрослая жизнь держится на списках, кофе и переносах",
+      "а ещё на тихой надежде, что никто сегодня не спросит «можно тебя на минутку?»"
+    ],
+    "caption": "взрослая жизнь иногда звучит именно так.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T07:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-07-60/01.jpg",
+      "published/hf72-20260924-07-60/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-08-61",
+    "title": "я не откладываю дела. я жду, когда они потеряют актуальность",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "я не откладываю дела. я жду, когда они потеряют актуальность",
+      "иногда это прокрастинация, а иногда — безупречное стратегическое терпение"
+    ],
+    "caption": "какая мысль попала точно?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T08:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-08-61/01.jpg",
+      "published/hf72-20260924-08-61/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-09-62",
+    "title": "моя интуиция работает идеально — через три дня",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "моя интуиция работает идеально — через три дня",
+      "сначала я всё объясню, оправдаю и обдумаю. потом внезапно понимаю, что была права сразу"
+    ],
+    "caption": "узнали себя — или кого-то рядом?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T09:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-09-62/01.jpg",
+      "published/hf72-20260924-09-62/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-10-63",
+    "title": "планы на вечер: никого не осуждать",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "планы на вечер: никого не осуждать",
+      "но обсудить альтернативные версии поведения с подругой правила не запрещают"
+    ],
+    "caption": "иногда одна фраза объясняет целую историю.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T10:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-10-63/01.jpg",
+      "published/hf72-20260924-10-63/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-11-64",
+    "title": "купила ежедневник, чтобы красиво записывать переносы",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "купила ежедневник, чтобы красиво записывать переносы",
+      "система работает: теперь я точно знаю, какое дело не сделано особенно организованно"
+    ],
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T11:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-11-64/01.jpg",
+      "published/hf72-20260924-11-64/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-12-65",
+    "title": "у меня нет проблем с доверием. у меня отличная память",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "у меня нет проблем с доверием. у меня отличная память",
+      "просто некоторые люди удивляются, что их поступки сохраняются не только в переписке"
+    ],
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T12:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-12-65/01.jpg",
+      "published/hf72-20260924-12-65/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-13-66",
+    "title": "хотела начать новую жизнь с понедельника",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "хотела начать новую жизнь с понедельника",
+      "но старая попросила сначала разобрать стирку, оплатить счета и ответить на два сообщения"
+    ],
+    "caption": "взрослая жизнь иногда звучит именно так.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T13:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-13-66/01.jpg",
+      "published/hf72-20260924-13-66/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-14-67",
+    "title": "я очень гибкий человек, пока не легла удобно",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "я очень гибкий человек, пока не легла удобно",
+      "после этого любые перемены требуют веской причины и желательно доставки"
+    ],
+    "caption": "какая мысль попала точно?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T14:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-14-67/01.jpg",
+      "published/hf72-20260924-14-67/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-15-68",
+    "title": "раньше боялась упустить шанс. теперь — время сна",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "раньше боялась упустить шанс. теперь — время сна",
+      "приоритеты не стали скучнее. они просто наконец перестали работать против меня"
+    ],
+    "caption": "узнали себя — или кого-то рядом?",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T15:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-15-68/01.jpg",
+      "published/hf72-20260924-15-68/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-16-69",
+    "title": "моя суперсила — придумать идеальный ответ после разговора",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "моя суперсила — придумать идеальный ответ после разговора",
+      "в реальном времени доступна только демоверсия: «понятно», взгляд и внутренний монолог"
+    ],
+    "caption": "иногда одна фраза объясняет целую историю.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T16:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-16-69/01.jpg",
+      "published/hf72-20260924-16-69/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-17-70",
+    "title": "с возрастом всё легче выбирать людей",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "с возрастом всё легче выбирать людей",
+      "нужны те, после которых не приходится открывать заметки и анализировать каждую фразу"
+    ],
+    "caption": "сохраняйте, если к этой мысли захочется вернуться.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T17:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-17-70/01.jpg",
+      "published/hf72-20260924-17-70/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-18-71",
+    "title": "я не стала менее общительной. я стала точнее",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "я не стала менее общительной. я стала точнее",
+      "раньше шла ко всем, теперь только туда, где интересно, спокойно и можно сесть"
+    ],
+    "caption": "отправьте той, которая поймёт без длинных объяснений.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T18:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-18-71/01.jpg",
+      "published/hf72-20260924-18-71/02.jpg"
+    ]
+  },
+  {
+    "id": "hf72-20260924-19-72",
+    "title": "счастье любит тишину. и режим «не беспокоить»",
+    "topic": "самоирония",
+    "experiment": "72h-24-per-day-cover-variant-1",
+    "slides": [
+      "счастье любит тишину. и режим «не беспокоить»",
+      "особенно когда все срочные вопросы внезапно способны подождать до завтра"
+    ],
+    "caption": "взрослая жизнь иногда звучит именно так.",
+    "rights_status": "original",
+    "commercial": false,
+    "commercial_reviewed": true,
+    "scheduled_at": "2026-09-24T19:00:00+03:00",
+    "status": "ready",
+    "assets": [
+      "published/hf72-20260924-19-72/01.jpg",
+      "published/hf72-20260924-19-72/02.jpg"
+    ]
   }
 ]

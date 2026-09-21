@@ -40,6 +40,7 @@ class Settings:
     max_consecutive_errors: int = field(default_factory=lambda: int(os.getenv("MAX_CONSECUTIVE_ERRORS", "3")))
     output_dir: Path = field(default_factory=lambda: Path(os.getenv("OUTPUT_DIR", "published")))
     queue_path: Path = field(default_factory=lambda: Path(os.getenv("QUEUE_PATH", "data/queue.json")))
+    insights_path: Path = field(default_factory=lambda: Path(os.getenv("INSIGHTS_PATH", "data/insights.json")))
 
     @property
     def timezone(self) -> ZoneInfo:

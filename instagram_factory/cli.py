@@ -9,7 +9,7 @@ from .pipeline import Pipeline
 
 def main() -> None:
     parser = argparse.ArgumentParser(prog="ig-factory")
-    parser.add_argument("command", choices=("render", "status", "publish-due", "test-publish"))
+    parser.add_argument("command", choices=("render", "status", "publish-due", "test-publish", "collect-insights"))
     args = parser.parse_args()
     load_env()
     pipeline = Pipeline(Settings())
@@ -19,6 +19,8 @@ def main() -> None:
         result = pipeline.status()
     elif args.command == "test-publish":
         result = pipeline.publish_due(force=True)
+    elif args.command == "collect-insights":
+        result = pipeline.collect_insights()
     else:
         result = pipeline.publish_due()
     print(json.dumps(result, ensure_ascii=False, indent=2))

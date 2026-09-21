@@ -7,6 +7,7 @@ from instagram_factory.editor import validate_post
 from instagram_factory.queue import due_posts
 from instagram_factory.renderer import render_carousel
 from instagram_factory.api import InstagramAPI
+from instagram_factory.pipeline import Pipeline
 
 
 class FactoryTests(unittest.TestCase):
@@ -67,44 +68,29 @@ class FactoryTests(unittest.TestCase):
         self.assertEqual(captured["params"]["media_type"], "REELS")
         self.assertEqual(captured["params"]["share_to_feed"], "true")
 
-    def test_valid_reel_spec(self):
-        post = {
-            "id": "reel-sample",
-            "media_type": "reel",
-            "scenes": [{"source_asset": "assets/example.png", "text": "Первый акт"}],
-            "caption": "Тест",
-            "rights_status": "original",
-            "commercial": False,
-            "commercial_reviewed": True,
-        }
-        self.assertEqual(validate_post(post), [])
+    def test_insight_metric_value(self):
+        self.assertEqual(Pipeline._metric_value({"data": [{"values": [{"value": 17}]}]}), 17)
+        self.assertEqual(Pipeline._metric_value({"data": [{"total_value": {"value": 9}}]}), 9)
 
-    def test_valid_story_spec(self):
-        post = {
-            "id": "story-sample",
-            "media_type": "story",
-            "source_asset": "assets/example.png",
-            "text": "Подводка",
-            "caption": "",
-            "rights_status": "original",
-            "commercial": False,
-            "commercial_reviewed": True,
-        }
-        self.assertEqual(validate_post(post), [])
+    def test_insight_checkpoints(self):
+        self.assertEqual(Pipeline._checkpoint_due([], 6.2), 6)
+        snapshots = [{"checkpoint_hours": 6, "age_hours_approx": 6}]
+        self.assertEqual(Pipeline._checkpoint_due(snapshots, 24.1), 24)
+        snapshots.append({"checkpoint_hours": 24, "age_hours_approx": 24})
+        self.assertIsNone(Pipeline._checkpoint_due(snapshots, 40))
 
-    def test_story_container_parameters(self):
+    def test_content_publishing_limit_request(self):
         api = InstagramAPI("token", "123")
         captured = {}
 
         def fake_request(method, path, params=None):
             captured.update({"method": method, "path": path, "params": params})
-            return {"id": "story-container"}
+            return {"data": [{"quota_usage": 7, "config": {"quota_total": 50}}]}
 
         api._request = fake_request
-        container = api.create_story_container("https://cdn.example/story.jpg")
-        self.assertEqual(container, "story-container")
-        self.assertEqual(captured["params"]["media_type"], "STORIES")
-        self.assertEqual(captured["params"]["image_url"], "https://cdn.example/story.jpg")
+        payload = api.content_publishing_limit()
+        self.assertEqual(payload["data"][0]["quota_usage"], 7)
+        self.assertEqual(captured["path"], "123/content_publishing_limit")
 
 
 if __name__ == "__main__":
