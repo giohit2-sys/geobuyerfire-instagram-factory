@@ -40,6 +40,9 @@ jobs:
             git rm -f "${parts[@]}"
             git diff --cached --quiet || git commit -m "chore: deploy 72-hour carousel experiment"
             git push
+          elif [ ${#parts[@]} -gt 0 ]; then
+            echo "Deployment bundle is incomplete; waiting for all 8 parts." >&2
+            exit 1
           fi
       - name: Unpack initial deployment
         shell: bash
