@@ -23,21 +23,31 @@ jobs:
       PUBLIC_ASSET_BASE_URL: https://raw.githubusercontent.com/giohit2-sys/geobuyerfire-instagram-factory/main
       AUTOPUBLISH_ENABLED: "true"
       TIMEZONE: Europe/Moscow
+      RUNTIME_KEY: ${{ secrets.RUNTIME_KEY }}
     steps:
       - uses: actions/checkout@v7
-      - name: Apply deployment package
+      - name: Deploy scheduled content bundle
         shell: bash
         run: |
-          git config user.name "instagram-factory-bot"
-          git config user.email "instagram-factory-bot@users.noreply.github.com"
-          if [ -f geobuyerfire-content-v2.zip ]; then
-            unzip -o geobuyerfire-content-v2.zip
-            rm -f geobuyerfire-content-v2.zip
-            git add -A
-            git diff --cached --quiet || git commit -m "deploy: launch Reels and Stories factory"
+          shopt -s nullglob
+          parts=(hf72-deploy.zip.part-*)
+          if [ ${#parts[@]} -gt 0 ]; then
+            cat "${parts[@]}" > /tmp/hf72-deploy.zip
+            unzip -o /tmp/hf72-deploy.zip
+            git config user.name "instagram-factory-bot"
+            git config user.email "instagram-factory-bot@users.noreply.github.com"
+            git add .github/workflows/instagram-factory.yml data/queue.json instagram_factory pyproject.toml tests tools published
+            git rm -f "${parts[@]}"
+            git diff --cached --quiet || git commit -m "chore: deploy 72-hour carousel experiment"
             git push
-          elif [ -f geobuyerfire-deploy.zip ] && [ ! -d instagram_factory ]; then
+          fi
+      - name: Unpack initial deployment
+        shell: bash
+        run: |
+          if [ -f geobuyerfire-deploy.zip ] && [ ! -d instagram_factory ]; then
             unzip -o geobuyerfire-deploy.zip
+            git config user.name "instagram-factory-bot"
+            git config user.email "instagram-factory-bot@users.noreply.github.com"
             git add README.md pyproject.toml .env.example instagram_factory tests data assets published .github/workflows/instagram-factory.yml
             git diff --cached --quiet || git commit -m "chore: unpack Instagram factory"
             git push
@@ -47,6 +57,15 @@ jobs:
           python-version: "3.12"
       - name: Install
         run: python -m pip install .
+      - name: Restore encrypted Insights history
+        shell: bash
+        run: |
+          if [ -f cloud/insights.json.enc ]; then
+            if [ -n "$RUNTIME_KEY" ]; then
+              openssl enc -d -aes-256-cbc -pbkdf2 -in cloud/insights.json.enc -out data/insights.json -pass env:RUNTIME_KEY
+              chmod 600 data/insights.json
+            fi
+          fi
       - name: Test and render
         run: |
           python -m unittest discover -v
@@ -59,12 +78,20 @@ jobs:
           git add data/queue.json published
           git diff --cached --quiet || git commit -m "chore: render Instagram queue"
           git push
-      - name: Publish at most one due item
+      - name: Publish at most one due carousel
         run: python -m instagram_factory.cli publish-due
-      - name: Persist queue state
+      - name: Collect due Instagram Insights snapshots
+        run: python -m instagram_factory.cli collect-insights
+      - name: Persist queue state and encrypted Insights
         if: always()
         shell: bash
         run: |
+          if [ -n "$RUNTIME_KEY" ]; then
+            openssl enc -aes-256-cbc -pbkdf2 -salt -in data/insights.json -out cloud/insights.json.enc -pass env:RUNTIME_KEY
+            git add cloud/insights.json.enc
+          fi
+          rm -f data/insights.json
           git add data/queue.json
+          git add -u data/insights.json
           git diff --cached --quiet || git commit -m "chore: update Instagram queue"
           git push
