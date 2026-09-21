@@ -630,7 +630,9 @@
     "commercial_reviewed": true,
     "share_to_feed": true,
     "scheduled_at": "2026-09-21T17:00:00+03:00",
-    "status": "ready",
-    "video_asset": "published/reels/reel-financial-director.mp4"
+    "status": "published",
+    "video_asset": "published/reels/reel-financial-director.mp4",
+    "published_media_id": "18023728415878931",
+    "published_at": "2026-09-21T17:18:26.163235+03:00"
   }
 ]
