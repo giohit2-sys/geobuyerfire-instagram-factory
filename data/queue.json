@@ -439,7 +439,9 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-21T22:00:00+03:00",
-    "status": "ready",
+    "status": "published",
+    "published_media_id": "18354389269172301",
+    "published_at": "2026-09-22T05:05:19.382628+03:00",
     "assets": [
       "published/hf72-20260921-22-03/01.jpg",
       "published/hf72-20260921-22-03/02.jpg"
