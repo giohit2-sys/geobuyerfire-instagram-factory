@@ -791,11 +791,13 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-22T21:00:00+03:00",
-    "status": "ready",
+    "status": "published",
     "assets": [
       "published/hf72-20260922-14-19/01.jpg",
       "published/hf72-20260922-14-19/02.jpg"
-    ]
+    ],
+    "published_media_id": "17972905761150645",
+    "published_at": "2026-09-22T21:22:22.478215+03:00"
   },
   {
     "id": "hf72-20260922-15-20",
