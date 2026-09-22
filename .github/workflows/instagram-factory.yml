@@ -98,6 +98,8 @@ jobs:
           fi
           rm -f data/insights.json
           git add data/queue.json
-          git add -u data/insights.json
+          if git ls-files --error-unmatch data/insights.json >/dev/null 2>&1; then
+            git add -u data/insights.json
+          fi
           git diff --cached --quiet || git commit -m "chore: update Instagram queue"
           git push
