@@ -396,12 +396,12 @@
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-21T20:00:00+03:00",
     "status": "published",
+    "published_media_id": "17906356260489615",
+    "published_at": "2026-09-21T20:10:02.517801+03:00",
     "assets": [
       "published/hf72-20260921-20-01/01.jpg",
       "published/hf72-20260921-20-01/02.jpg"
-    ],
-    "published_media_id": "17906356260489615",
-    "published_at": "2026-09-21T20:10:02.517801+03:00"
+    ]
   },
   {
     "id": "hf72-20260921-21-02",
@@ -417,7 +417,9 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-21T21:00:00+03:00",
-    "status": "ready",
+    "status": "published",
+    "published_media_id": "18114767050802626",
+    "published_at": "2026-09-22T04:58:39.175719+03:00",
     "assets": [
       "published/hf72-20260921-21-02/01.jpg",
       "published/hf72-20260921-21-02/02.jpg"
