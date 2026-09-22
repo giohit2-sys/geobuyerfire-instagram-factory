@@ -64,9 +64,10 @@ jobs:
       - name: Restore encrypted Insights history
         shell: bash
         run: |
+          INSIGHTS_CIPHER_KEY="${RUNTIME_KEY:-$INSTAGRAM_ACCESS_TOKEN}"
           if [ -f cloud/insights.json.enc ]; then
-            if [ -n "$RUNTIME_KEY" ]; then
-              openssl enc -d -aes-256-cbc -pbkdf2 -in cloud/insights.json.enc -out data/insights.json -pass env:RUNTIME_KEY
+            if [ -n "$INSIGHTS_CIPHER_KEY" ]; then
+              openssl enc -d -aes-256-cbc -pbkdf2 -in cloud/insights.json.enc -out data/insights.json -pass env:INSIGHTS_CIPHER_KEY
               chmod 600 data/insights.json
             fi
           fi
@@ -90,8 +91,9 @@ jobs:
         if: always()
         shell: bash
         run: |
-          if [ -n "$RUNTIME_KEY" ]; then
-            openssl enc -aes-256-cbc -pbkdf2 -salt -in data/insights.json -out cloud/insights.json.enc -pass env:RUNTIME_KEY
+          INSIGHTS_CIPHER_KEY="${RUNTIME_KEY:-$INSTAGRAM_ACCESS_TOKEN}"
+          if [ -n "$INSIGHTS_CIPHER_KEY" ]; then
+            openssl enc -aes-256-cbc -pbkdf2 -salt -in data/insights.json -out cloud/insights.json.enc -pass env:INSIGHTS_CIPHER_KEY
             git add cloud/insights.json.enc
           fi
           rm -f data/insights.json
