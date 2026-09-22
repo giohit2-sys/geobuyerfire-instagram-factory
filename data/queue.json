@@ -527,11 +527,13 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-22T09:00:00+03:00",
-    "status": "ready",
+    "status": "published",
     "assets": [
       "published/hf72-20260922-02-07/01.jpg",
       "published/hf72-20260922-02-07/02.jpg"
-    ]
+    ],
+    "published_media_id": "18459270394138659",
+    "published_at": "2026-09-22T09:22:36.980810+03:00"
   },
   {
     "id": "hf72-20260922-03-08",
