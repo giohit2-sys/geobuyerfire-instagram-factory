@@ -1429,11 +1429,13 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-24T02:00:00+03:00",
-    "status": "ready",
+    "status": "published",
     "assets": [
       "published/hf72-20260923-19-48/01.jpg",
       "published/hf72-20260923-19-48/02.jpg"
-    ]
+    ],
+    "published_media_id": "18128844721687854",
+    "published_at": "2026-09-24T02:14:15.057671+03:00"
   },
   {
     "id": "hf72-20260923-20-49",
