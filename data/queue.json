@@ -1231,11 +1231,13 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-23T17:00:00+03:00",
-    "status": "ready",
+    "status": "published",
     "assets": [
       "published/hf72-20260923-10-39/01.jpg",
       "published/hf72-20260923-10-39/02.jpg"
-    ]
+    ],
+    "published_media_id": "18018525170728712",
+    "published_at": "2026-09-23T17:18:29.010491+03:00"
   },
   {
     "id": "hf72-20260923-11-40",
