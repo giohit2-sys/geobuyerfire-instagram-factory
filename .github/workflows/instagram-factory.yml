@@ -21,7 +21,7 @@ jobs:
       INSTAGRAM_API_HOST: https://graph.instagram.com
       INSTAGRAM_API_VERSION: v26.0
       PUBLIC_ASSET_BASE_URL: https://raw.githubusercontent.com/giohit2-sys/geobuyerfire-instagram-factory/main
-      AUTOPUBLISH_ENABLED: "false"
+      AUTOPUBLISH_ENABLED: "true"
       TIMEZONE: Europe/Moscow
       RUNTIME_KEY: ${{ secrets.RUNTIME_KEY }}
     steps:
