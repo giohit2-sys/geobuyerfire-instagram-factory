@@ -2063,7 +2063,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-25T20:00:00+03:00",
-    "status": "ready",
+    "status": "archived",
     "assets": [
       "published/story-v1-20260925-20/01.jpg",
       "published/story-v1-20260925-20/02.jpg",
@@ -2072,7 +2072,9 @@
       "published/story-v1-20260925-20/05.jpg",
       "published/story-v1-20260925-20/06.jpg",
       "published/story-v1-20260925-20/07.jpg"
-    ]
+    ],
+    "production_approved": false,
+    "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
   },
   {
     "id": "story-v1-20260926-12",
@@ -2093,7 +2095,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-26T12:00:00+03:00",
-    "status": "ready",
+    "status": "archived",
     "assets": [
       "published/story-v1-20260926-12/01.jpg",
       "published/story-v1-20260926-12/02.jpg",
@@ -2102,7 +2104,9 @@
       "published/story-v1-20260926-12/05.jpg",
       "published/story-v1-20260926-12/06.jpg",
       "published/story-v1-20260926-12/07.jpg"
-    ]
+    ],
+    "production_approved": false,
+    "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
   },
   {
     "id": "story-v1-20260926-20",
@@ -2123,7 +2127,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-26T20:00:00+03:00",
-    "status": "ready",
+    "status": "archived",
     "assets": [
       "published/story-v1-20260926-20/01.jpg",
       "published/story-v1-20260926-20/02.jpg",
@@ -2132,7 +2136,9 @@
       "published/story-v1-20260926-20/05.jpg",
       "published/story-v1-20260926-20/06.jpg",
       "published/story-v1-20260926-20/07.jpg"
-    ]
+    ],
+    "production_approved": false,
+    "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
   },
   {
     "id": "story-v1-20260927-12",
@@ -2153,7 +2159,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-27T12:00:00+03:00",
-    "status": "ready",
+    "status": "archived",
     "assets": [
       "published/story-v1-20260927-12/01.jpg",
       "published/story-v1-20260927-12/02.jpg",
@@ -2162,7 +2168,9 @@
       "published/story-v1-20260927-12/05.jpg",
       "published/story-v1-20260927-12/06.jpg",
       "published/story-v1-20260927-12/07.jpg"
-    ]
+    ],
+    "production_approved": false,
+    "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
   },
   {
     "id": "story-v1-20260927-20",
@@ -2183,7 +2191,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-27T20:00:00+03:00",
-    "status": "ready",
+    "status": "archived",
     "assets": [
       "published/story-v1-20260927-20/01.jpg",
       "published/story-v1-20260927-20/02.jpg",
@@ -2192,7 +2200,9 @@
       "published/story-v1-20260927-20/05.jpg",
       "published/story-v1-20260927-20/06.jpg",
       "published/story-v1-20260927-20/07.jpg"
-    ]
+    ],
+    "production_approved": false,
+    "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
   },
   {
     "id": "story-v1-20260928-12",
@@ -2213,7 +2223,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-28T12:00:00+03:00",
-    "status": "ready",
+    "status": "archived",
     "assets": [
       "published/story-v1-20260928-12/01.jpg",
       "published/story-v1-20260928-12/02.jpg",
@@ -2222,7 +2232,9 @@
       "published/story-v1-20260928-12/05.jpg",
       "published/story-v1-20260928-12/06.jpg",
       "published/story-v1-20260928-12/07.jpg"
-    ]
+    ],
+    "production_approved": false,
+    "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
   },
   {
     "id": "story-v1-20260928-20",
@@ -2243,7 +2255,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-28T20:00:00+03:00",
-    "status": "ready",
+    "status": "archived",
     "assets": [
       "published/story-v1-20260928-20/01.jpg",
       "published/story-v1-20260928-20/02.jpg",
@@ -2252,7 +2264,9 @@
       "published/story-v1-20260928-20/05.jpg",
       "published/story-v1-20260928-20/06.jpg",
       "published/story-v1-20260928-20/07.jpg"
-    ]
+    ],
+    "production_approved": false,
+    "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
   },
   {
     "id": "story-v1-20260929-12",
@@ -2273,7 +2287,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-29T12:00:00+03:00",
-    "status": "ready",
+    "status": "archived",
     "assets": [
       "published/story-v1-20260929-12/01.jpg",
       "published/story-v1-20260929-12/02.jpg",
@@ -2282,7 +2296,9 @@
       "published/story-v1-20260929-12/05.jpg",
       "published/story-v1-20260929-12/06.jpg",
       "published/story-v1-20260929-12/07.jpg"
-    ]
+    ],
+    "production_approved": false,
+    "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
   },
   {
     "id": "story-v1-20260929-20",
@@ -2303,7 +2319,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-29T20:00:00+03:00",
-    "status": "ready",
+    "status": "archived",
     "assets": [
       "published/story-v1-20260929-20/01.jpg",
       "published/story-v1-20260929-20/02.jpg",
@@ -2312,7 +2328,9 @@
       "published/story-v1-20260929-20/05.jpg",
       "published/story-v1-20260929-20/06.jpg",
       "published/story-v1-20260929-20/07.jpg"
-    ]
+    ],
+    "production_approved": false,
+    "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
   },
   {
     "id": "story-v1-20260930-12",
@@ -2333,7 +2351,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-30T12:00:00+03:00",
-    "status": "ready",
+    "status": "archived",
     "assets": [
       "published/story-v1-20260930-12/01.jpg",
       "published/story-v1-20260930-12/02.jpg",
@@ -2342,7 +2360,9 @@
       "published/story-v1-20260930-12/05.jpg",
       "published/story-v1-20260930-12/06.jpg",
       "published/story-v1-20260930-12/07.jpg"
-    ]
+    ],
+    "production_approved": false,
+    "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
   },
   {
     "id": "story-v1-20260930-20",
@@ -2363,7 +2383,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-30T20:00:00+03:00",
-    "status": "ready",
+    "status": "archived",
     "assets": [
       "published/story-v1-20260930-20/01.jpg",
       "published/story-v1-20260930-20/02.jpg",
@@ -2372,6 +2392,8 @@
       "published/story-v1-20260930-20/05.jpg",
       "published/story-v1-20260930-20/06.jpg",
       "published/story-v1-20260930-20/07.jpg"
-    ]
+    ],
+    "production_approved": false,
+    "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
   }
 ]
