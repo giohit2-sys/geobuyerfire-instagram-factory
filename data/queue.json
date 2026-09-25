@@ -2401,7 +2401,7 @@
     "title": "спорт и бар",
     "topic": "самоирония / спорт",
     "media_type": "image",
-    "status": "ready",
+    "status": "published",
     "scheduled_at": "2026-09-25T17:00:00+00:00",
     "production_approved": true,
     "assets": [
@@ -2422,7 +2422,9 @@
     },
     "qa_method": "visual inspection full-size and 256px-wide preview; central 3:4 crop text bounds checked; not biometric verification",
     "audio": "none",
-    "experiment": "meme-canary-2-20260926"
+    "experiment": "meme-canary-2-20260926",
+    "published_media_id": "18376854187232811",
+    "published_at": "2026-09-25T20:13:04.792733+03:00"
   },
   {
     "id": "meme-canary-20260926-money",
