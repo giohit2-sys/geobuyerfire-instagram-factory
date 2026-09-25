@@ -2031,7 +2031,7 @@
     "commercial": false,
     "commercial_reviewed": true,
     "scheduled_at": "2026-09-25T12:00:00+03:00",
-    "status": "ready",
+    "status": "published",
     "assets": [
       "published/story-v1-20260925-12/01.jpg",
       "published/story-v1-20260925-12/02.jpg",
@@ -2040,7 +2040,9 @@
       "published/story-v1-20260925-12/05.jpg",
       "published/story-v1-20260925-12/06.jpg",
       "published/story-v1-20260925-12/07.jpg"
-    ]
+    ],
+    "published_media_id": "18168270667461745",
+    "published_at": "2026-09-25T12:18:43.119517+03:00"
   },
   {
     "id": "story-v1-20260925-20",
