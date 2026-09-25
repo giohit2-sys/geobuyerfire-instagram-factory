@@ -12,6 +12,10 @@ from .renderer import render_carousel
 
 
 class Pipeline:
+    @staticmethod
+    def _approved_due(posts: list[dict], now: datetime) -> list[dict]:
+        return [post for post in due_posts(posts, now) if post.get("production_approved") is True]
+
     def __init__(self, settings: Settings):
         self.s = settings
         self.api = InstagramAPI(settings.access_token, settings.user_id,
@@ -23,6 +27,12 @@ class Pipeline:
         previous: list[str] = []
         for post in posts:
             if post.get("status") not in {"draft", "ready"}:
+                continue
+            if post.get("media_type") == "image":
+                paths = post.get("assets") or []
+                if len(paths) != 1 or not Path(paths[0]).is_file() or post.get("production_approved") is not True:
+                    post["status"] = "needs_review"
+                    rejected += 1
                 continue
             if str(post.get("media_type") or "carousel").lower() == "reel":
                 video_asset = Path(str(post.get("video_asset") or ""))
@@ -54,9 +64,14 @@ class Pipeline:
         assert self.api
         posts = load_queue(self.s.queue_path)
         now = datetime.now(self.s.timezone)
-        candidates = due_posts(posts, now)
+        if any(p.get("status") in {"publishing", "publish_paused"} for p in posts):
+            return {"published": 0, "reason": "publish_paused_requires_reconciliation"}
+        # A queued/rendered asset is not permission to publish it. This explicit
+        # gate prevents legacy text carousels and unreviewed AI drafts from
+        # going live when the workflow switch is turned back on.
+        candidates = self._approved_due(posts, now)
         if not candidates:
-            return {"published": 0, "reason": "nothing_due"}
+            return {"published": 0, "reason": "nothing_approved_due"}
         post = candidates[0]
 
         # Meta exposes the account's actual rolling quota. At high frequency,
@@ -69,25 +84,51 @@ class Pipeline:
                 config = rows[0].get("config") or {}
                 total = int(config.get("quota_total", 0) or 0)
                 if total and usage >= total:
+                    post["status"] = "publish_paused"
+                    save_queue(self.s.queue_path, posts)
                     return {
                         "published": 0,
                         "reason": "content_publishing_quota_reached",
                         "quota_usage": usage,
                         "quota_total": total,
                     }
-        except InstagramAPIError as exc:
-            # A missing quota permission must not blindly block an otherwise
-            # valid publish, but the normal API error handling still protects
-            # the account if Meta rejects the actual publish operation.
-            limit_payload = {"warning": str(exc)[:240]}
-        reasons = validate_post(post)
+            if not rows or not total or usage >= total:
+                post["status"] = "publish_paused"
+                save_queue(self.s.queue_path, posts)
+                return {"published": 0, "reason": "quota_unverified_or_reached"}
+        except (InstagramAPIError, ValueError, TypeError):
+            post["status"] = "publish_paused"
+            save_queue(self.s.queue_path, posts)
+            return {"published": 0, "reason": "quota_check_failed"}
+        is_image = post.get("media_type") == "image"
+        validation_post = dict(post)
+        if is_image:
+            validation_post["slides"] = [post.get("on_image_text", ""), ""]
+        reasons = validate_post(validation_post)
+        if is_image and (len(post.get("assets") or []) != 1 or not all(post.get("qa", {}).get(k) is True for k in ("text", "anatomy", "identity", "crop", "rights"))):
+            reasons.append("image_qa_required")
         if reasons:
             post["status"] = "needs_review"
             post["review_reasons"] = reasons
             save_queue(self.s.queue_path, posts)
             return {"published": 0, "reason": "review_failed", "details": reasons}
         media_type = str(post.get("media_type") or "carousel").lower()
-        if media_type == "reel":
+        # Persist before the external side effect. Any ambiguous failure stops
+        # future posts until the media result is reconciled, preventing retries.
+        post["status"] = "publishing"
+        save_queue(self.s.queue_path, posts)
+        if media_type == "image":
+            asset = Path(post["assets"][0])
+            if not asset.is_file():
+                return {"published": 0, "reason": "missing_image_asset"}
+            result = self.api._request("POST", f"{self.s.user_id}/media", {
+                "image_url": f"{self.s.asset_base_url}/{asset.as_posix()}",
+                "caption": post["caption"],
+            })
+            container = str(result["id"])
+            self.api.wait_until_ready(container)
+            media_id = self.api.publish_container(container)
+        elif media_type == "reel":
             video_asset = Path(str(post.get("video_asset") or ""))
             if not video_asset.as_posix() or video_asset.as_posix() == ".":
                 return {"published": 0, "reason": "missing_video_asset"}
@@ -131,10 +172,10 @@ class Pipeline:
         }
 
     @staticmethod
-    def _metric_value(payload: dict) -> int | float:
+    def _metric_value(payload: dict) -> int | float | None:
         data = payload.get("data") or []
         if not data:
-            return 0
+            return None
         row = data[0]
         total = row.get("total_value")
         if isinstance(total, dict) and isinstance(total.get("value"), (int, float)):
@@ -142,21 +183,21 @@ class Pipeline:
         values = row.get("values") or []
         if values and isinstance(values[-1].get("value"), (int, float)):
             return values[-1]["value"]
-        return 0
+        return None
 
     @staticmethod
     def _checkpoint_due(snapshots: list[dict], age_hours: float) -> int | None:
-        for target in (6, 24, 72):
-            if age_hours < target:
-                continue
-            if any(snapshot.get("checkpoint_hours") == target for snapshot in snapshots):
-                continue
-            # Honor older hand-entered snapshots that predate checkpoint_hours.
-            if any(abs(float(snapshot.get("age_hours_approx", -999)) - target) <= (4 if target == 6 else 12)
-                   for snapshot in snapshots):
-                continue
-            return target
-        return None
+        elapsed = [target for target in (6, 24, 72) if age_hours >= target]
+        if not elapsed:
+            return None
+        # A current snapshot cannot reconstruct missed earlier checkpoints.
+        target = max(elapsed)
+        if any(snapshot.get("checkpoint_hours") == target for snapshot in snapshots):
+            return None
+        if any(abs(float(snapshot.get("age_hours_approx", -999)) - target) <= (4 if target == 6 else 12)
+               for snapshot in snapshots):
+            return None
+        return target
 
     def collect_insights(self) -> dict:
         self.s.require_publish()
@@ -189,31 +230,43 @@ class Pipeline:
             media_id = str(post["published_media_id"])
             try:
                 metadata = self.api.media_metadata(media_id)
-                metrics: dict[str, int | float] = {}
+                metrics: dict[str, int | float | None] = {}
+                raw_metrics: dict[str, dict] = {}
+                unavailable_metrics: list[str] = []
                 for metric in ("views", "reach", "likes", "comments", "saved", "shares",
                                "profile_visits", "follows", "total_interactions"):
                     try:
-                        metrics[metric] = self._metric_value(self.api.media_insight(media_id, metric))
+                        payload = self.api.media_insight(media_id, metric)
+                        raw_metrics[metric] = payload
+                        metrics[metric] = self._metric_value(payload)
+                        if metrics[metric] is None:
+                            unavailable_metrics.append(metric)
                     except InstagramAPIError:
-                        # Metric support differs by media product type; retain the rest.
+                        # Missing metrics are unknown, never fabricated zeroes.
+                        unavailable_metrics.append(metric)
                         continue
             except InstagramAPIError:
                 errors += 1
                 continue
-            reach = int(metrics.get("reach", 0) or 0)
-            likes = int(metrics.get("likes", metadata.get("like_count", 0)) or 0)
-            comments = int(metrics.get("comments", metadata.get("comments_count", 0)) or 0)
-            saves = int(metrics.get("saved", 0) or 0)
-            shares = int(metrics.get("shares", 0) or 0)
-            profile_visits = int(metrics.get("profile_visits", 0) or 0)
-            follows = int(metrics.get("follows", 0) or 0)
-            per_1000 = lambda value: round(value * 1000 / reach, 2) if reach else 0
+            reach = metrics.get("reach")
+            likes = metrics.get("likes")
+            if likes is None:
+                likes = metadata.get("like_count")
+            comments = metrics.get("comments")
+            if comments is None:
+                comments = metadata.get("comments_count")
+            saves = metrics.get("saved")
+            shares = metrics.get("shares")
+            profile_visits = metrics.get("profile_visits")
+            follows = metrics.get("follows")
+            per_1000 = lambda value: round(value * 1000 / reach, 2) if reach and value is not None else None
             snapshot = {
                 "captured_at": now.isoformat(),
                 "checkpoint_hours": checkpoint,
                 "age_hours_approx": round(age_hours),
+                "checkpoint_lateness_hours": round(max(0, age_hours - checkpoint), 2),
                 "media_product_type": metadata.get("media_product_type"),
-                "views": int(metrics.get("views", 0) or 0),
+                "views": metrics.get("views"),
                 "accounts_reached": reach,
                 "likes": likes,
                 "comments": comments,
@@ -221,7 +274,9 @@ class Pipeline:
                 "shares": shares,
                 "profile_visits": profile_visits,
                 "follows": follows,
-                "total_interactions": int(metrics.get("total_interactions", 0) or 0),
+                "total_interactions": metrics.get("total_interactions"),
+                "raw_metric_responses": raw_metrics,
+                "unavailable_metrics": unavailable_metrics,
                 "rates_per_1000_reached": {
                     "saves": per_1000(saves),
                     "shares": per_1000(shares),
@@ -233,7 +288,12 @@ class Pipeline:
             record["permalink"] = metadata.get("permalink") or record.get("permalink", "")
             record["snapshots"].append(snapshot)
             captured += 1
+        # New records were added to the lookup, not to the original posts list.
+        # Persist the lookup so first-time captures survive the next runner.
+        insights["posts"] = list(records.values())
         insights["updated_at"] = now.isoformat()
         self.s.insights_path.parent.mkdir(parents=True, exist_ok=True)
         self.s.insights_path.write_text(json.dumps(insights, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        return {"captured": captured, "errors": errors}
+        return {"captured": captured, "errors": errors,
+                "stored_posts": len(insights["posts"]),
+                "stored_snapshots": sum(len(row.get("snapshots", [])) for row in insights["posts"])}
