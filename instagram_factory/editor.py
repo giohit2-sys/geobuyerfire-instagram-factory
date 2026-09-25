@@ -29,6 +29,10 @@ def validate_post(post: dict, previous_texts: list[str] | None = None) -> list[s
         if any(len(str(slide).strip()) > 125 for slide in slides):
             reasons.append("slide_too_long")
         creative_texts = list(map(str, slides))
+    elif media_type == "image":
+        creative_texts = [str(post.get("on_image_text") or "")]
+        if not creative_texts[0].strip() or len(creative_texts[0]) > 125:
+            reasons.append("image_text_invalid")
     elif media_type == "reel":
         scenes = post.get("scenes") or []
         if not 1 <= len(scenes) <= 4:
