@@ -2431,7 +2431,7 @@
     "title": "личные траты",
     "topic": "деньги / отношения",
     "media_type": "image",
-    "status": "ready",
+    "status": "published",
     "scheduled_at": "2026-09-25T19:00:00+00:00",
     "production_approved": true,
     "assets": [
@@ -2452,6 +2452,8 @@
     },
     "qa_method": "visual inspection full-size and 320px-wide preview; generous central 3:4 text margins; not biometric verification",
     "audio": "none",
-    "experiment": "meme-canary-2-20260926"
+    "experiment": "meme-canary-2-20260926",
+    "published_media_id": "18113472479109162",
+    "published_at": "2026-09-25T22:15:20.275409+03:00"
   }
 ]
