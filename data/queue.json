@@ -2395,5 +2395,61 @@
     ],
     "production_approved": false,
     "archive_reason": "User retired old carousel queue; replaced by reviewed memes"
+  },
+  {
+    "id": "meme-canary-20260926-gym",
+    "title": "спорт и бар",
+    "topic": "самоирония / спорт",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-25T17:00:00+00:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-canary-20260926-gym.jpg"
+    ],
+    "caption": "универсальный специалист.",
+    "on_image_text": "в баре — тренер по спорту / в зале — эксперт по бару",
+    "rights_status": "original",
+    "commercial": false,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/DdpBkPoRE2h/",
+    "joke_mechanic": "две противоположные идентичности в двух местах",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "visual inspection full-size and 256px-wide preview; central 3:4 crop text bounds checked; not biometric verification",
+    "audio": "none",
+    "experiment": "meme-canary-2-20260926"
+  },
+  {
+    "id": "meme-canary-20260926-money",
+    "title": "личные траты",
+    "topic": "деньги / отношения",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-25T19:00:00+00:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-canary-20260926-money.jpg"
+    ],
+    "caption": "уточнение к семейному бюджету.",
+    "on_image_text": "мужчина без денег — не проблема. проблема — когда он тратит мои.",
+    "rights_status": "original",
+    "commercial": false,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Ddo86PBx8oc/",
+    "joke_mechanic": "серьёзное правило на доске с разворотом в личную претензию",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "visual inspection full-size and 320px-wide preview; generous central 3:4 text margins; not biometric verification",
+    "audio": "none",
+    "experiment": "meme-canary-2-20260926"
   }
 ]
