@@ -91,6 +91,8 @@ jobs:
         if: always()
         shell: bash
         run: |
+          git config user.name "instagram-factory-bot"
+          git config user.email "instagram-factory-bot@users.noreply.github.com"
           export INSIGHTS_CIPHER_KEY="${RUNTIME_KEY:-$INSTAGRAM_ACCESS_TOKEN}"
           if [ -n "$INSIGHTS_CIPHER_KEY" ] && [ -f data/insights.json ]; then
             openssl enc -aes-256-cbc -pbkdf2 -salt -in data/insights.json -out data/insights.json.enc -pass env:INSIGHTS_CIPHER_KEY
