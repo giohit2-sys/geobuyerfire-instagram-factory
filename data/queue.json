@@ -2740,7 +2740,7 @@
     "title": "выпьешь за меня",
     "topic": "отношения / алкоголь",
     "media_type": "image",
-    "status": "ready",
+    "status": "published",
     "scheduled_at": "2026-09-27T20:00:00+03:00",
     "production_approved": true,
     "assets": [
@@ -2762,6 +2762,8 @@
     },
     "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
     "audio": "none",
-    "experiment": "ten-approved-source-edits-20260927"
+    "experiment": "ten-approved-source-edits-20260927",
+    "published_media_id": "18114011675586338",
+    "published_at": "2026-09-27T20:15:47.003064+03:00"
   }
 ]
