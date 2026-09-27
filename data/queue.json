@@ -2455,5 +2455,295 @@
     "experiment": "meme-canary-2-20260926",
     "published_media_id": "18113472479109162",
     "published_at": "2026-09-25T22:15:20.275409+03:00"
+  },
+  {
+    "id": "meme-source-edit-20260927-01",
+    "title": "возраст и велосипед",
+    "topic": "взрослая самоирония",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-27T11:00:00+03:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-source-edit-20260927/01-age-bicycle.jpg"
+    ],
+    "caption": "мой бутик в шапке профиля:",
+    "on_image_text": "люди моего возраста / я в моём возрасте",
+    "rights_status": "original",
+    "commercial": true,
+    "commercial_reviewed": true,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/DduDnI1xSMb/",
+    "adaptation": "character_identity_replacement_only",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
+    "audio": "none",
+    "experiment": "ten-approved-source-edits-20260927"
+  },
+  {
+    "id": "meme-source-edit-20260927-02",
+    "title": "мужик без денег",
+    "topic": "деньги",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-27T12:00:00+03:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-source-edit-20260927/02-money-board.jpg"
+    ],
+    "caption": "мой бутик в шапке профиля:",
+    "on_image_text": "самая меркантильная, ноющая и требовательная — это мужик без денег",
+    "rights_status": "original",
+    "commercial": true,
+    "commercial_reviewed": true,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Ddo86PBx8oc/",
+    "adaptation": "character_identity_replacement_only",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
+    "audio": "none",
+    "experiment": "ten-approved-source-edits-20260927"
+  },
+  {
+    "id": "meme-source-edit-20260927-03",
+    "title": "спорт и бар",
+    "topic": "спорт / самоирония",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-27T13:00:00+03:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-source-edit-20260927/03-gym-bar.jpg"
+    ],
+    "caption": "мой бутик в шапке профиля:",
+    "on_image_text": "самый спортивный в баре / самый пьющий в зале",
+    "rights_status": "original",
+    "commercial": true,
+    "commercial_reviewed": true,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/DdpBkPoRE2h/",
+    "adaptation": "character_identity_replacement_only",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
+    "audio": "none",
+    "experiment": "ten-approved-source-edits-20260927"
+  },
+  {
+    "id": "meme-source-edit-20260927-04",
+    "title": "только открыл глаза",
+    "topic": "бытовая самоирония",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-27T14:00:00+03:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-source-edit-20260927/04-bed-eyes.jpg"
+    ],
+    "caption": "мой бутик в шапке профиля:",
+    "on_image_text": "когда только открыл глаза",
+    "rights_status": "original",
+    "commercial": true,
+    "commercial_reviewed": true,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/DduB3wlxWYF/",
+    "adaptation": "character_identity_replacement_only",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
+    "audio": "none",
+    "experiment": "ten-approved-source-edits-20260927"
+  },
+  {
+    "id": "meme-source-edit-20260927-05",
+    "title": "подарок вместо свидания",
+    "topic": "отношения / быт",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-27T15:00:00+03:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-source-edit-20260927/05-couch-cat.jpg"
+    ],
+    "caption": "мой бутик в шапке профиля:",
+    "on_image_text": "подарок вместо свидания",
+    "rights_status": "original",
+    "commercial": true,
+    "commercial_reviewed": true,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Ddtr1I1KKRI/",
+    "adaptation": "character_identity_replacement_only",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
+    "audio": "none",
+    "experiment": "ten-approved-source-edits-20260927"
+  },
+  {
+    "id": "meme-source-edit-20260927-06",
+    "title": "хвост",
+    "topic": "отношения / самоирония",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-27T16:00:00+03:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-source-edit-20260927/06-tail.jpg"
+    ],
+    "caption": "мой бутик в шапке профиля:",
+    "on_image_text": "мем про хвост",
+    "rights_status": "original",
+    "commercial": true,
+    "commercial_reviewed": true,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Ddn92HUxN6V/",
+    "adaptation": "character_identity_replacement_only",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
+    "audio": "none",
+    "experiment": "ten-approved-source-edits-20260927"
+  },
+  {
+    "id": "meme-source-edit-20260927-07",
+    "title": "ты не писала",
+    "topic": "отношения",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-27T17:00:00+03:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-source-edit-20260927/07-dress-couch.jpg"
+    ],
+    "caption": "мой бутик в шапке профиля:",
+    "on_image_text": "ну, ты не писала, и я тоже ничего не писал",
+    "rights_status": "original",
+    "commercial": true,
+    "commercial_reviewed": true,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Ddp1AJcKSK2/",
+    "adaptation": "character_identity_replacement_only",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
+    "audio": "none",
+    "experiment": "ten-approved-source-edits-20260927"
+  },
+  {
+    "id": "meme-source-edit-20260927-08",
+    "title": "почерк врача",
+    "topic": "работа / врач",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-27T18:00:00+03:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-source-edit-20260927/08-doctor-chat.jpg"
+    ],
+    "caption": "мой бутик в шапке профиля:",
+    "on_image_text": "как прочитать это? это парацетамол. а как насчёт этого? амоксициллин",
+    "rights_status": "original",
+    "commercial": true,
+    "commercial_reviewed": true,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Ddp534sCseX/",
+    "adaptation": "character_identity_replacement_only",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
+    "audio": "none",
+    "experiment": "ten-approved-source-edits-20260927"
+  },
+  {
+    "id": "meme-source-edit-20260927-09",
+    "title": "рождён сидеть",
+    "topic": "самоирония",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-27T19:00:00+03:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-source-edit-20260927/09-rock.jpg"
+    ],
+    "caption": "мой бутик в шапке профиля:",
+    "on_image_text": "я был рождён, чтобы сидеть и пердеть, но мне постоянно приходится что-то делать",
+    "rights_status": "original",
+    "commercial": true,
+    "commercial_reviewed": true,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/DdpsWpVqITs/",
+    "adaptation": "character_identity_replacement_only",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
+    "audio": "none",
+    "experiment": "ten-approved-source-edits-20260927"
+  },
+  {
+    "id": "meme-source-edit-20260927-10",
+    "title": "выпьешь за меня",
+    "topic": "отношения / алкоголь",
+    "media_type": "image",
+    "status": "ready",
+    "scheduled_at": "2026-09-27T20:00:00+03:00",
+    "production_approved": true,
+    "assets": [
+      "published/meme-source-edit-20260927/10-vodka-proposal.jpg"
+    ],
+    "caption": "мой бутик в шапке профиля:",
+    "on_image_text": "ты выпьешь за меня? конечно выпью!",
+    "rights_status": "original",
+    "commercial": true,
+    "commercial_reviewed": true,
+    "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/DdpDOUHxk_S/",
+    "adaptation": "character_identity_replacement_only",
+    "qa": {
+      "text": true,
+      "anatomy": true,
+      "identity": true,
+      "crop": true,
+      "rights": true
+    },
+    "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
+    "audio": "none",
+    "experiment": "ten-approved-source-edits-20260927"
   }
 ]
