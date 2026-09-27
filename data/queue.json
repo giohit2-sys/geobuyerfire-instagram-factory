@@ -2523,7 +2523,7 @@
     "title": "спорт и бар",
     "topic": "спорт / самоирония",
     "media_type": "image",
-    "status": "ready",
+    "status": "published",
     "scheduled_at": "2026-09-27T13:00:00+03:00",
     "production_approved": true,
     "assets": [
@@ -2545,7 +2545,9 @@
     },
     "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
     "audio": "none",
-    "experiment": "ten-approved-source-edits-20260927"
+    "experiment": "ten-approved-source-edits-20260927",
+    "published_media_id": "18110433074141399",
+    "published_at": "2026-09-27T13:16:57.300414+03:00"
   },
   {
     "id": "meme-source-edit-20260927-04",
