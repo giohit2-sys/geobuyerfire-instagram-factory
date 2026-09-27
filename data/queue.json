@@ -2585,7 +2585,7 @@
     "title": "подарок вместо свидания",
     "topic": "отношения / быт",
     "media_type": "image",
-    "status": "ready",
+    "status": "published",
     "scheduled_at": "2026-09-27T15:00:00+03:00",
     "production_approved": true,
     "assets": [
@@ -2607,7 +2607,9 @@
     },
     "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
     "audio": "none",
-    "experiment": "ten-approved-source-edits-20260927"
+    "experiment": "ten-approved-source-edits-20260927",
+    "published_media_id": "18115409570004277",
+    "published_at": "2026-09-27T15:21:39.860398+03:00"
   },
   {
     "id": "meme-source-edit-20260927-06",
