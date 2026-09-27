@@ -2492,7 +2492,7 @@
     "title": "мужик без денег",
     "topic": "деньги",
     "media_type": "image",
-    "status": "ready",
+    "status": "published",
     "scheduled_at": "2026-09-27T12:00:00+03:00",
     "production_approved": true,
     "assets": [
@@ -2514,7 +2514,9 @@
     },
     "qa_method": "user visually approved SOURCE→OUTPUT test set; exported as JPEG; source composition retained",
     "audio": "none",
-    "experiment": "ten-approved-source-edits-20260927"
+    "experiment": "ten-approved-source-edits-20260927",
+    "published_media_id": "18058403015576904",
+    "published_at": "2026-09-27T12:16:52.603168+03:00"
   },
   {
     "id": "meme-source-edit-20260927-03",
