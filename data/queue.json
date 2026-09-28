@@ -2895,7 +2895,7 @@
     "title": "кальян тигр и пёс",
     "topic": "абсурд / отдых",
     "media_type": "image",
-    "status": "ready",
+    "status": "published",
     "scheduled_at": "2026-09-28T18:00:00+03:00",
     "production_approved": true,
     "assets": [
@@ -2917,7 +2917,9 @@
     },
     "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
     "audio": "none",
-    "experiment": "daily-source-edits-20260928"
+    "experiment": "daily-source-edits-20260928",
+    "published_media_id": "18130434391688806",
+    "published_at": "2026-09-28T18:21:10.045443+03:00"
   },
   {
     "id": "meme-source-edit-20260928-06",
