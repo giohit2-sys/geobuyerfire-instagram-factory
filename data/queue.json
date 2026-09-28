@@ -2833,7 +2833,7 @@
     "title": "выходной на диване",
     "topic": "взрослая жизнь / отдых",
     "media_type": "image",
-    "status": "ready",
+    "status": "published",
     "scheduled_at": "2026-09-28T16:00:00+03:00",
     "production_approved": true,
     "assets": [
@@ -2855,7 +2855,9 @@
     },
     "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
     "audio": "none",
-    "experiment": "daily-source-edits-20260928"
+    "experiment": "daily-source-edits-20260928",
+    "published_media_id": "18133807429641702",
+    "published_at": "2026-09-28T16:20:20.629779+03:00"
   },
   {
     "id": "meme-source-edit-20260928-04",
