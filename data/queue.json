@@ -2771,7 +2771,7 @@
     "title": "снова творить хрень",
     "topic": "самоирония",
     "media_type": "image",
-    "status": "ready",
+    "status": "published",
     "scheduled_at": "2026-09-28T14:30:00+03:00",
     "production_approved": true,
     "assets": [
@@ -2793,7 +2793,9 @@
     },
     "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
     "audio": "none",
-    "experiment": "daily-source-edits-20260928"
+    "experiment": "daily-source-edits-20260928",
+    "published_media_id": "18019446797926535",
+    "published_at": "2026-09-28T14:46:53.865485+03:00"
   },
   {
     "id": "meme-source-edit-20260928-02",
