@@ -3050,7 +3050,7 @@
     "title": "тяжело смотреть",
     "topic": "отношения",
     "media_type": "image",
-    "status": "ready",
+    "status": "published",
     "scheduled_at": "2026-09-28T23:00:00+03:00",
     "production_approved": true,
     "assets": [
@@ -3072,6 +3072,8 @@
     },
     "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
     "audio": "none",
-    "experiment": "daily-source-edits-20260928"
+    "experiment": "daily-source-edits-20260928",
+    "published_media_id": "17873959665635598",
+    "published_at": "2026-09-28T23:17:27.457095+03:00"
   }
 ]
