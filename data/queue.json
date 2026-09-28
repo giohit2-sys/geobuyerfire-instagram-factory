@@ -1,3 +1,295 @@
+,
+{
+  "id": "meme-source-edit-20260928-01",
+  "title": "снова творить хрень",
+  "topic": "самоирония",
+  "media_type": "image",
+  "status": "ready",
+  "scheduled_at": "2026-09-28T14:30:00+03:00",
+  "production_approved": true,
+  "assets": [
+    "published/meme-source-edit-20260928/01.jpg"
+  ],
+  "caption": "мой бутик в шапке профиля:",
+  "on_image_text": "ПОРА СНОВА ТВОРИТЬ Х💙ЙНЮ / А ТО СЛУХИ ПОУТИХЛИ",
+  "rights_status": "original",
+  "commercial": true,
+  "commercial_reviewed": true,
+  "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Dd05L8WsJfz/",
+  "adaptation": "character_identity_replacement_only",
+  "qa": {
+    "text": true,
+    "anatomy": true,
+    "identity": true,
+    "crop": true,
+    "rights": true
+  },
+  "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
+  "audio": "none",
+  "experiment": "daily-source-edits-20260928"
+},
+{
+  "id": "meme-source-edit-20260928-02",
+  "title": "алкогольный интеллект",
+  "topic": "алкоголь / самоирония",
+  "media_type": "image",
+  "status": "ready",
+  "scheduled_at": "2026-09-28T15:00:00+03:00",
+  "production_approved": true,
+  "assets": [
+    "published/meme-source-edit-20260928/02.jpg"
+  ],
+  "caption": "мой бутик в шапке профиля:",
+  "on_image_text": "Всю х💙йню что ты творишь по пьяне — это не ты… / Это АИ. Алкогольный Интеллект",
+  "rights_status": "original",
+  "commercial": true,
+  "commercial_reviewed": true,
+  "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Dd0z0InsTz9/",
+  "adaptation": "character_identity_replacement_only",
+  "qa": {
+    "text": true,
+    "anatomy": true,
+    "identity": true,
+    "crop": true,
+    "rights": true
+  },
+  "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
+  "audio": "none",
+  "experiment": "daily-source-edits-20260928"
+},
+{
+  "id": "meme-source-edit-20260928-03",
+  "title": "выходной на диване",
+  "topic": "взрослая жизнь / отдых",
+  "media_type": "image",
+  "status": "ready",
+  "scheduled_at": "2026-09-28T16:00:00+03:00",
+  "production_approved": true,
+  "assets": [
+    "published/meme-source-edit-20260928/03.jpg"
+  ],
+  "caption": "мой бутик в шапке профиля:",
+  "on_image_text": "В детстве я не понимала… взрослые в выходной лежат дома на диване. Прошу у них прощения.",
+  "rights_status": "original",
+  "commercial": true,
+  "commercial_reviewed": true,
+  "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Dd0dUpLMSzA/",
+  "adaptation": "character_identity_replacement_only",
+  "qa": {
+    "text": true,
+    "anatomy": true,
+    "identity": true,
+    "crop": true,
+    "rights": true
+  },
+  "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
+  "audio": "none",
+  "experiment": "daily-source-edits-20260928"
+},
+{
+  "id": "meme-source-edit-20260928-04",
+  "title": "залечь на дно",
+  "topic": "отношения",
+  "media_type": "image",
+  "status": "ready",
+  "scheduled_at": "2026-09-28T17:00:00+03:00",
+  "production_approved": true,
+  "assets": [
+    "published/meme-source-edit-20260928/04.jpg"
+  ],
+  "caption": "мой бутик в шапке профиля:",
+  "on_image_text": "Иногда хочется залечь на дно / Но там бывшая",
+  "rights_status": "original",
+  "commercial": true,
+  "commercial_reviewed": true,
+  "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Dd0cqlKso95/",
+  "adaptation": "character_identity_replacement_only",
+  "qa": {
+    "text": true,
+    "anatomy": true,
+    "identity": true,
+    "crop": true,
+    "rights": true
+  },
+  "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
+  "audio": "none",
+  "experiment": "daily-source-edits-20260928"
+},
+{
+  "id": "meme-source-edit-20260928-05",
+  "title": "кальян тигр и пёс",
+  "topic": "абсурд / отдых",
+  "media_type": "image",
+  "status": "ready",
+  "scheduled_at": "2026-09-28T18:00:00+03:00",
+  "production_approved": true,
+  "assets": [
+    "published/meme-source-edit-20260928/05.jpg"
+  ],
+  "caption": "мой бутик в шапке профиля:",
+  "on_image_text": "диалоговый мем с кальяном, тигром и псом",
+  "rights_status": "original",
+  "commercial": true,
+  "commercial_reviewed": true,
+  "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Dd0XJXJsWOX/",
+  "adaptation": "character_identity_replacement_only",
+  "qa": {
+    "text": true,
+    "anatomy": true,
+    "identity": true,
+    "crop": true,
+    "rights": true
+  },
+  "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
+  "audio": "none",
+  "experiment": "daily-source-edits-20260928"
+},
+{
+  "id": "meme-source-edit-20260928-06",
+  "title": "как без меня",
+  "topic": "дружба / самоирония",
+  "media_type": "image",
+  "status": "ready",
+  "scheduled_at": "2026-09-28T19:00:00+03:00",
+  "production_approved": true,
+  "assets": [
+    "published/meme-source-edit-20260928/06.jpg"
+  ],
+  "caption": "мой бутик в шапке профиля:",
+  "on_image_text": "Прикинь, как хреново тебе было бы, если бы ты меня не знал",
+  "rights_status": "original",
+  "commercial": true,
+  "commercial_reviewed": true,
+  "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Dd0SyUxsSPr/",
+  "adaptation": "character_identity_replacement_only",
+  "qa": {
+    "text": true,
+    "anatomy": true,
+    "identity": true,
+    "crop": true,
+    "rights": true
+  },
+  "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
+  "audio": "none",
+  "experiment": "daily-source-edits-20260928"
+},
+{
+  "id": "meme-source-edit-20260928-07",
+  "title": "духовное пробуждение",
+  "topic": "самоирония",
+  "media_type": "image",
+  "status": "ready",
+  "scheduled_at": "2026-09-28T20:00:00+03:00",
+  "production_approved": true,
+  "assets": [
+    "published/meme-source-edit-20260928/07.jpg"
+  ],
+  "caption": "мой бутик в шапке профиля:",
+  "on_image_text": "До духовного пробуждения / После духовного пробуждения",
+  "rights_status": "original",
+  "commercial": true,
+  "commercial_reviewed": true,
+  "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Dd0EVimIwU9/",
+  "adaptation": "character_identity_replacement_only",
+  "qa": {
+    "text": true,
+    "anatomy": true,
+    "identity": true,
+    "crop": true,
+    "rights": true
+  },
+  "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
+  "audio": "none",
+  "experiment": "daily-source-edits-20260928"
+},
+{
+  "id": "meme-source-edit-20260928-08",
+  "title": "вино и мера",
+  "topic": "отношения / алкоголь",
+  "media_type": "image",
+  "status": "ready",
+  "scheduled_at": "2026-09-28T21:00:00+03:00",
+  "production_approved": true,
+  "assets": [
+    "published/meme-source-edit-20260928/08.jpg"
+  ],
+  "caption": "мой бутик в шапке профиля:",
+  "on_image_text": "Когда купил вино — сразу понятно, сколько пить!",
+  "rights_status": "original",
+  "commercial": true,
+  "commercial_reviewed": true,
+  "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Ddz66ZCos4o/",
+  "adaptation": "character_identity_replacement_only",
+  "qa": {
+    "text": true,
+    "anatomy": true,
+    "identity": true,
+    "crop": true,
+    "rights": true
+  },
+  "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
+  "audio": "none",
+  "experiment": "daily-source-edits-20260928"
+},
+{
+  "id": "meme-source-edit-20260928-09",
+  "title": "чистый ебланиум",
+  "topic": "работа / самоирония",
+  "media_type": "image",
+  "status": "ready",
+  "scheduled_at": "2026-09-28T22:00:00+03:00",
+  "production_approved": true,
+  "assets": [
+    "published/meme-source-edit-20260928/09.jpg"
+  ],
+  "caption": "мой бутик в шапке профиля:",
+  "on_image_text": "Наконец-то / чистый ебланиум",
+  "rights_status": "original",
+  "commercial": true,
+  "commercial_reviewed": true,
+  "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Ddzy6ejsZQb/",
+  "adaptation": "character_identity_replacement_only",
+  "qa": {
+    "text": true,
+    "anatomy": true,
+    "identity": true,
+    "crop": true,
+    "rights": true
+  },
+  "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
+  "audio": "none",
+  "experiment": "daily-source-edits-20260928"
+},
+{
+  "id": "meme-source-edit-20260928-10",
+  "title": "тяжело смотреть",
+  "topic": "отношения",
+  "media_type": "image",
+  "status": "ready",
+  "scheduled_at": "2026-09-28T23:00:00+03:00",
+  "production_approved": true,
+  "assets": [
+    "published/meme-source-edit-20260928/10.jpg"
+  ],
+  "caption": "мой бутик в шапке профиля:",
+  "on_image_text": "Тяжело смотреть на губы / долбоеба",
+  "rights_status": "original",
+  "commercial": true,
+  "commercial_reviewed": true,
+  "source_url": "https://www.instagram.com/dr_pokhabov2.0/p/Ddz3XG9IT-c/",
+  "adaptation": "character_identity_replacement_only",
+  "qa": {
+    "text": true,
+    "anatomy": true,
+    "identity": true,
+    "crop": true,
+    "rights": true
+  },
+  "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
+  "audio": "none",
+  "experiment": "daily-source-edits-20260928"
+}
+]
 [
   {
     "id": "adult-peace-v2",
