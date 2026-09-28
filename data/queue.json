@@ -2802,7 +2802,7 @@
     "title": "алкогольный интеллект",
     "topic": "алкоголь / самоирония",
     "media_type": "image",
-    "status": "ready",
+    "status": "published",
     "scheduled_at": "2026-09-28T15:00:00+03:00",
     "production_approved": true,
     "assets": [
@@ -2824,7 +2824,9 @@
     },
     "qa_method": "visual inspection full-size and feed-size preview; identity reference checked; exported as JPEG",
     "audio": "none",
-    "experiment": "daily-source-edits-20260928"
+    "experiment": "daily-source-edits-20260928",
+    "published_media_id": "18020227496866742",
+    "published_at": "2026-09-28T15:24:52.665034+03:00"
   },
   {
     "id": "meme-source-edit-20260928-03",
