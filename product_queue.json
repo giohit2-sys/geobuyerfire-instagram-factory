@@ -3,7 +3,7 @@
     "id": "buyerfire-products-20261004-01",
     "title": "Bottega Parachute и Snap Ankle Boot",
     "topic": "bags_shoes",
-    "status": "ready",
+    "status": "publish_paused",
     "media_type": "reel",
     "scheduled_at": "2026-10-04T18:25:00+03:00",
     "video_asset": "buyerfire-products-20261004-01.mp4",
@@ -23,6 +23,7 @@
       "https://t.me/c/1334536416/114910"
     ],
     "profile_link_verified": "https://t.me/+2iUUAYpYKsc0OTAy resolves to BUYER FIRE channel on 2026-10-04",
-    "reschedule_reason": "Owner requested immediate recovery publication; no prior container or media ID"
+    "reschedule_reason": "Owner requested immediate recovery publication; no prior container or media ID",
+    "error_type": "InstagramAPIError"
   }
 ]
