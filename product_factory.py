@@ -64,6 +64,9 @@ def run():
                     raw=str(exc); body=json.loads(raw[raw.index('{'):])
                     error=body.get('error',{})
                     safe.update({k:error[k] for k in ('code','error_subcode','type') if k in error})
+                    import re
+                    message=str(error.get('message','')).replace(s.access_token,'[REDACTED]')
+                    safe['message']=re.sub(r'https?://\S+|[A-Za-z0-9_-]{80,}', '[REDACTED]', message)[:300]
                 except Exception:
                     pass
                 print(json.dumps(safe))
