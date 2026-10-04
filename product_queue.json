@@ -3,16 +3,25 @@
     "id": "buyerfire-products-20261004-01",
     "title": "Bottega Parachute и Snap Ankle Boot",
     "topic": "bags_shoes",
-    "status": "ready",
+    "status": "missed_slot",
     "media_type": "reel",
     "scheduled_at": "2026-10-04T11:00:00+03:00",
     "video_asset": "buyerfire-products-20261004-01.mp4",
     "sha256": "98abcd7182959b019c7192172296cbdefb63224d884a0048ac5eb54b4659192a",
     "caption": "мой бутик в шапке профиля:",
     "production_approved": true,
-    "qa": {"visual": true, "readability": true, "products": true, "audio_rights": true, "technical": true},
+    "qa": {
+      "visual": true,
+      "readability": true,
+      "products": true,
+      "audio_rights": true,
+      "technical": true
+    },
     "audio_rights_evidence": "Owner expressly confirmed rights in chat on 2026-10-04",
-    "sources": ["https://t.me/c/1334536416/114904", "https://t.me/c/1334536416/114910"],
+    "sources": [
+      "https://t.me/c/1334536416/114904",
+      "https://t.me/c/1334536416/114910"
+    ],
     "profile_link_verified": "https://t.me/+2iUUAYpYKsc0OTAy resolves to BUYER FIRE channel on 2026-10-04"
   }
 ]
