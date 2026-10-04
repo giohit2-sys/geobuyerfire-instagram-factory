@@ -49,6 +49,24 @@ def run():
     now=datetime.now(s.timezone)
     p=select_due(posts,now)
     if any(x.get('status') in BLOCKED for x in posts):
+        # Read-only diagnostics: never create or publish a container while blocked.
+        for label, read in (
+            ('account', lambda: api._request('GET',s.user_id,{'fields':'id,username'})),
+            ('quota', api.content_publishing_limit),
+            ('recent', lambda: api.recent_media(limit=5)),
+        ):
+            try:
+                result=read()
+                print(json.dumps({'diagnostic':label,'ok':True,'data':result}))
+            except Exception as exc:
+                safe={'diagnostic':label,'ok':False,'error_type':type(exc).__name__}
+                try:
+                    raw=str(exc); body=json.loads(raw[raw.index('{'):])
+                    error=body.get('error',{})
+                    safe.update({k:error[k] for k in ('code','error_subcode','type') if k in error})
+                except Exception:
+                    pass
+                print(json.dumps(safe))
         raise RuntimeError('Publishing paused; reconcile Meta result first')
     if not p:
         print(json.dumps({'published':0,'reason':'nothing_approved_due','ready':sum(x.get('status')=='ready' for x in posts)}))
